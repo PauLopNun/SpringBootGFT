@@ -36,4 +36,14 @@ public class UserService {
         User user = getUserById(id);
         users.remove(user);
     }
+
+    public User updateUser(Long id, User userDetails) {
+
+        User existingUser = getUserById(id);
+        existingUser.setNombre(userDetails.getNombre());
+        existingUser.setEdad(userDetails.getEdad());
+        existingUser.setAllergy(userDetails.getAllergy());
+
+        return existingUser;
+    }
 }
