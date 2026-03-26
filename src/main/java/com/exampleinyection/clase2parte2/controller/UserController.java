@@ -1,5 +1,6 @@
 package com.exampleinyection.clase2parte2.controller;
 
+import com.exampleinyection.clase2parte2.config.AppConfig;
 import com.exampleinyection.clase2parte2.model.User;
 import com.exampleinyection.clase2parte2.service.UserService;
 import jakarta.validation.Valid;
@@ -13,14 +14,18 @@ import java.util.List;
 public class UserController {
 
     private final UserService userService;
+    private final AppConfig appConfig;
 
-    public UserController(UserService userService) {
+    public UserController(UserService userService, AppConfig appConfig) {
         this.userService = userService;
+        this.appConfig = appConfig;
     }
 
     @GetMapping
-    public List<User> getUsers() {
-        return userService.getUsers();
+    public List<User> getUsers(
+            @RequestParam(defaultValue = "1") int page,
+            @RequestParam(defaultValue = "10") int size) {
+        return userService.getPaginatedUsers(page, size);
     }
 
     @GetMapping("/{id}")
@@ -39,6 +44,14 @@ public class UserController {
         return ResponseEntity.noContent().build();
     }
 
+    // --- NUEVO MÉTODO DE BORRADO MASIVO ---
+    @DeleteMapping("/all")
+    public ResponseEntity<Void> deleteAllUsers() {
+        userService.deleteAllUsers();
+        return ResponseEntity.noContent().build();
+    }
+    // --------------------------------------
+
     @PutMapping("/{id}")
     public ResponseEntity<User> updateUser(@PathVariable Long id, @RequestBody @Valid User userDetails) {
         User updatedUser = userService.updateUser(id, userDetails);
@@ -48,7 +61,6 @@ public class UserController {
     @GetMapping("/user/search")
     public ResponseEntity<List<User>> searchUsers(@RequestParam String nombre) {
         List<User> usersFound = userService.searchByName(nombre);
-
         return ResponseEntity.ok(usersFound);
     }
 
@@ -56,10 +68,9 @@ public class UserController {
     public ResponseEntity<List<User>> createMultipleUsers(@RequestBody @Valid List<User> users) {
         return ResponseEntity.ok(userService.saveMultipleUsers(users));
     }
-    @GetMapping
-    public List<User> getUsers(
-            @RequestParam(defaultValue = "1") int page,
-            @RequestParam(defaultValue = "10") int size) {
-        return userService.getPaginatedUsers(page, size);
+
+    @GetMapping("/config")
+    public ResponseEntity<AppConfig> getConfig() {
+        return ResponseEntity.ok(appConfig);
     }
 }

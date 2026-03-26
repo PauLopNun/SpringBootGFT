@@ -1,11 +1,13 @@
 package com.exampleinyection.clase2parte2.service;
 
-import com.exampleinyection.clase2parte2.exception.InvalidUserException;
+import com.exampleinyection.clase2parte2.config.AppConfig;
 import com.exampleinyection.clase2parte2.exception.UserNotFoundException;
 import com.exampleinyection.clase2parte2.model.User;
 import lombok.Getter;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,13 +18,26 @@ public class UserService {
 
     private final List<User> users = new ArrayList<>();
     private long nextId = 1;
+    private final AppConfig appConfig;
+
+    public UserService(AppConfig appConfig) {
+        this.appConfig = appConfig;
+    }
 
     public User saveUser(User user) {
 
+        String nombreFinal = (user.getNombre() == null || user.getNombre().isBlank())
+                ? appConfig.getDefaults().getName()
+                : user.getNombre();
+
+        int edadFinal = (user.getEdad() <= 0)
+                ? appConfig.getDefaults().getAge()
+                : user.getEdad();
+
         User newUser = new User(
                 nextId++,
-                user.getNombre(),
-                user.getEdad(),
+                nombreFinal,
+                edadFinal,
                 user.getAllergy()
         );
         users.add(newUser);
@@ -44,6 +59,14 @@ public class UserService {
     public User updateUser(Long id, User userDetails) {
 
         User existingUser = getUserById(id);
+
+        if (appConfig.getUpdate().isDisabled()) {
+            throw new ResponseStatusException(
+                    org.springframework.http.HttpStatus.FORBIDDEN,
+                    appConfig.getUpdate().getMessage()
+            );
+        }
+
         existingUser.setNombre(userDetails.getNombre());
         existingUser.setEdad(userDetails.getEdad());
         existingUser.setAllergy(userDetails.getAllergy());
@@ -64,18 +87,20 @@ public class UserService {
     }
 
     public List<User> getPaginatedUsers(int page, int size) {
-        if (page < 1) {
-            page = 1;
-        }
-        if (size < 1) {
-            size = 1;
-        }
+        if (page < 1) page = 1;
 
-        int skip = (page - 1) * size;
+        int maxSize = appConfig.getPagination().getMaxSize();
+        int finalSize = Math.min(size, maxSize);
+
+        int skip = (page - 1) * finalSize;
 
         return users.stream()
                 .skip(skip)
-                .limit(size)
+                .limit(finalSize)
                 .toList();
+    }
+
+    public void deleteAllUsers() {
+        users.clear();
     }
 }

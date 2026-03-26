@@ -1,3 +1,14 @@
 spring:
   application:
-    name: clase2parte2
+    name: gftspring2
+
+app:
+  name: "Mi App GFT"
+  update:
+    disabled: true
+    message: "No se puede actualizar ahora mismo"
+  pagination:
+    max-size: 50
+  defaults:
+    name: "Usuario Anónimo"
+    age: 18
