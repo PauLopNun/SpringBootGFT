@@ -4,7 +4,7 @@ import com.exampleinyection.clase2parte2.model.Allergy;
 import java.util.List;
 
 public record UserRequest(
-        String nombre,
-        Integer edad,    
-        List<Allergy> allergy
+        String name,
+        Integer age,    
+        List<Allergy> allergies
 ) {}

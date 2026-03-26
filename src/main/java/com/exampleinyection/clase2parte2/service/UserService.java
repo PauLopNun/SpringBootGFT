@@ -26,19 +26,19 @@ public class UserService {
     }
 
     public User saveUser(UserRequest request) {
-        String nombreFinal = (request.nombre() == null || request.nombre().isBlank())
+        String userNameWithDefault = (request.name() == null || request.name().isBlank())
                 ? appConfig.getDefaults().getName()
-                : request.nombre();
+                : request.name();
 
-        int edadFinal = (request.edad() == null || request.edad() <= 0)
+        int userAgeWithDefault = (request.age() == null || request.age() <= 0)
                 ? appConfig.getDefaults().getAge()
-                : request.edad();
+                : request.age();
 
         User newUser = new User(
                 nextId++,
-                nombreFinal,
-                edadFinal,
-                request.allergy()
+                userNameWithDefault,
+                userAgeWithDefault,
+                request.allergies()
         );
         users.add(newUser);
         return newUser;
@@ -66,22 +66,22 @@ public class UserService {
 
         User existingUser = getUserById(id);
 
-        if (request.nombre() != null && !request.nombre().isBlank()) {
-            existingUser.setNombre(request.nombre());
+        if (request.name() != null && !request.name().isBlank()) {
+            existingUser.setName(request.name());
         }
-        if (request.edad() != null && request.edad() > 0) {
-            existingUser.setEdad(request.edad());
+        if (request.age() != null && request.age() > 0) {
+            existingUser.setAge(request.age());
         }
-        if (request.allergy() != null) {
-            existingUser.setAllergy(request.allergy());
+        if (request.allergies() != null) {
+            existingUser.setAllergies(request.allergies());
         }
 
         return existingUser;
     }
 
-    public List<User> searchByName(String nombre) {
+    public List<User> searchByName(String nameSearchTerm) {
         return users.stream()
-                .filter(user -> StringUtils.containsIgnoreCase(user.getNombre(), nombre))
+                .filter(user -> StringUtils.containsIgnoreCase(user.getName(), nameSearchTerm))
                 .toList();
     }
 

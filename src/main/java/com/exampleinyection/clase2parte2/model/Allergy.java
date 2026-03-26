@@ -8,7 +8,6 @@ import lombok.Data;
 @Data
 public class Allergy {
 
-    private String nombre;
-    private int gravity;
-
+    private String name;
+    private int severity;
 }

@@ -18,7 +18,6 @@ public class AppConfig {
     @NotBlank(message = "El nombre de la app no puede estar vacío")
     private String name;
 
-    // Propiedad sensible que viene de variable de entorno
     @NotBlank(message = "La contraseña no puede estar vacía")
     private String password;
 
@@ -31,8 +30,6 @@ public class AppConfig {
     @NotNull @Valid
     private DefaultSettings defaults = new DefaultSettings();
 
-    /* Getters and Setters para testing funcional con coverage
-      por eso no uso Lombok aquí  */
 
     public String getName() {
         return name;

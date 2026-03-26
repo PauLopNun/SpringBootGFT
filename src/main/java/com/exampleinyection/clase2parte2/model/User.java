@@ -14,12 +14,12 @@ import java.util.List;
 public class User {
     private Long id;
 
-    @NotBlank(message = "Nombre obligatorio")
-    private String nombre;
+    @NotBlank(message = "Name is required")
+    private String name;
 
     @Min(0) @Max(120)
-    private int edad;
+    private int age;
 
     @Valid
-    private List<Allergy> allergy;
+    private List<Allergy> allergies;
 }
