@@ -1,7 +1,7 @@
 package com.exampleinyection.clase2parte2.service;
 
 import com.exampleinyection.clase2parte2.config.AppConfig;
-import com.exampleinyection.clase2parte2.dto.UserRequest; // Importamos el DTO
+import com.exampleinyection.clase2parte2.dto.UserRequest;
 import com.exampleinyection.clase2parte2.exception.UserNotFoundException;
 import com.exampleinyection.clase2parte2.model.User;
 import lombok.Getter;
@@ -26,12 +26,11 @@ public class UserService {
     }
 
     public User saveUser(UserRequest request) {
-        // En los records se accede así: request.nombre()
         String nombreFinal = (request.nombre() == null || request.nombre().isBlank())
                 ? appConfig.getDefaults().getName()
                 : request.nombre();
 
-        int edadFinal = (request.edad() <= 0)
+        int edadFinal = (request.edad() == null || request.edad() <= 0)
                 ? appConfig.getDefaults().getAge()
                 : request.edad();
 
@@ -58,8 +57,6 @@ public class UserService {
     }
 
     public User updateUser(Long id, UserRequest request) {
-        User existingUser = getUserById(id);
-
         if (appConfig.getUpdate().isDisabled()) {
             throw new ResponseStatusException(
                     HttpStatus.FORBIDDEN,
@@ -67,9 +64,17 @@ public class UserService {
             );
         }
 
-        existingUser.setNombre(request.nombre());
-        existingUser.setEdad(request.edad());
-        existingUser.setAllergy(request.allergy());
+        User existingUser = getUserById(id);
+
+        if (request.nombre() != null && !request.nombre().isBlank()) {
+            existingUser.setNombre(request.nombre());
+        }
+        if (request.edad() != null && request.edad() > 0) {
+            existingUser.setEdad(request.edad());
+        }
+        if (request.allergy() != null) {
+            existingUser.setAllergy(request.allergy());
+        }
 
         return existingUser;
     }

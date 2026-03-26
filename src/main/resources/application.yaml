@@ -1,14 +1,5 @@
 spring:
+  profiles:
+    active: dev
   application:
-    name: gftspring2
-
-app:
-  name: "Mi App GFT"
-  update:
-    disabled: false
-    message: "No se puede actualizar ahora mismo"
-  pagination:
-    max-size: 50
-  defaults:
-    name: "Usuario Anónimo"
-    age: 18
+    name: GFTSpringBoot

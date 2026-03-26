@@ -11,13 +11,13 @@ import org.springframework.beans.factory.annotation.Value;
 @Slf4j
 @SpringBootApplication
 @ConfigurationPropertiesScan
-public class Clase2parte2Application {
+public class GFTFormacion {
 
     @Value("${spring.application.name}")
     private String appName;
 
     public static void main(String[] args) {
-        SpringApplication.run(Clase2parte2Application.class, args);
+        SpringApplication.run(GFTFormacion.class, args);
     }
 
     @Bean
