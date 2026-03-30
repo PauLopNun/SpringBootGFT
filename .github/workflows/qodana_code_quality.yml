@@ -10,18 +10,20 @@ on:
   push:
     branches:
       - main
+      - master
+      - develop
 
 jobs:
   qodana:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: read
       pull-requests: write
       checks: write
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.pull_request.head.sha }}
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
           fetch-depth: 0
       - name: 'Qodana Scan'
         uses: JetBrains/qodana-action@v2026.1
@@ -31,7 +33,7 @@ jobs:
           # When pr-mode is set to true, Qodana analyzes only the files that have been changed
           pr-mode: false
           use-caches: true
-          post-pr-comment: true
+          post-pr-comment: ${{ github.event_name == 'pull_request' }}
           use-annotations: true
           # Upload Qodana results (SARIF, other artifacts, logs) as an artifact to the job
           upload-result: false
