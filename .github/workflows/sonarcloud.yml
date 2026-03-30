@@ -31,13 +31,33 @@ jobs:
       - name: Make Maven wrapper executable
         run: chmod +x mvnw
 
+      - name: Resolve Sonar project settings
+        id: sonar-settings
+        shell: bash
+        env:
+          INPUT_ORG: ${{ vars.SONAR_ORGANIZATION }}
+          INPUT_KEY: ${{ vars.SONAR_PROJECT_KEY }}
+          REPOSITORY_OWNER: ${{ github.repository_owner }}
+          REPOSITORY_NAME: ${{ github.event.repository.name }}
+        run: |
+          ORG="${INPUT_ORG:-$REPOSITORY_OWNER}"
+          KEY="${INPUT_KEY:-${REPOSITORY_OWNER}_${REPOSITORY_NAME}}"
+
+          if [ -z "$ORG" ] || [ -z "$KEY" ]; then
+            echo "SONAR_ORGANIZATION / SONAR_PROJECT_KEY no estan definidos y no se pudieron inferir." >&2
+            exit 1
+          fi
+
+          echo "organization=$ORG" >> "$GITHUB_OUTPUT"
+          echo "project_key=$KEY" >> "$GITHUB_OUTPUT"
+
       - name: Build, test and analyze with SonarCloud
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: >
-          ./mvnw -B clean verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
+          ./mvnw -B clean verify org.sonarsource.scanner.maven:sonar-maven-plugin:5.5.0.6356:sonar
           -Dsonar.host.url=https://sonarcloud.io
-          -Dsonar.organization=${{ vars.SONAR_ORGANIZATION }}
-          -Dsonar.projectKey=${{ vars.SONAR_PROJECT_KEY }}
+          -Dsonar.organization=${{ steps.sonar-settings.outputs.organization }}
+          -Dsonar.projectKey=${{ steps.sonar-settings.outputs.project_key }}
           -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml
 
