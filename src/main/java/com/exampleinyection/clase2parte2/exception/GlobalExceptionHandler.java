@@ -6,42 +6,37 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.server.ResponseStatusException;
 
-import java.util.HashMap;
-import java.util.Map;
-
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 
-    private ResponseEntity<Map<String, Object>> respuestaLimpia(int status, String mensaje) {
-        Map<String, Object> body = new HashMap<>();
-        body.put("status", status);
-        body.put("message", mensaje);
+    private ResponseEntity<ErrorResponse> createErrorResponse(int status, String message) {
+        ErrorResponse body = new ErrorResponse(status, message);
         return ResponseEntity.status(status).body(body);
     }
 
     @ExceptionHandler(UserNotFoundException.class)
-    public ResponseEntity<Map<String, Object>> handleNotFound(UserNotFoundException e) {
-        return respuestaLimpia(404, e.getMessage());
+    public ResponseEntity<ErrorResponse> handleNotFound(UserNotFoundException exception) {
+        return createErrorResponse(404, exception.getMessage());
     }
 
     @ExceptionHandler(InvalidUserException.class)
-    public ResponseEntity<Map<String, Object>> handleBadRequest(InvalidUserException e) {
-        return respuestaLimpia(417, e.getMessage());
+    public ResponseEntity<ErrorResponse> handleBadRequest(InvalidUserException exception) {
+        return createErrorResponse(417, exception.getMessage());
     }
 
     @ExceptionHandler(MethodArgumentNotValidException.class)
-    public ResponseEntity<Map<String, Object>> handleValidation(MethodArgumentNotValidException e) {
-        String mensaje = e.getBindingResult().getAllErrors().get(0).getDefaultMessage();
-        return respuestaLimpia(400, mensaje);
+    public ResponseEntity<ErrorResponse> handleValidation(MethodArgumentNotValidException exception) {
+        String message = exception.getBindingResult().getAllErrors().get(0).getDefaultMessage();
+        return createErrorResponse(400, message);
     }
 
     @ExceptionHandler(ResponseStatusException.class)
-    public ResponseEntity<Map<String, Object>> handleResponseStatus(ResponseStatusException e) {
-        return respuestaLimpia(e.getStatusCode().value(), e.getReason());
+    public ResponseEntity<ErrorResponse> handleResponseStatus(ResponseStatusException exception) {
+        return createErrorResponse(exception.getStatusCode().value(), exception.getReason());
     }
 
     @ExceptionHandler(Exception.class)
-    public ResponseEntity<Map<String, Object>> handleGenericError(Exception e) {
-        return respuestaLimpia(500, "Error interno inesperado");
+    public ResponseEntity<ErrorResponse> handleGenericError(Exception exception) {
+        return createErrorResponse(500, "Error interno inesperado");
     }
 }
