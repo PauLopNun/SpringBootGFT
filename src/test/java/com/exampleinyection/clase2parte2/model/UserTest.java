@@ -4,9 +4,13 @@ import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class UserTest {
+class UserTest {
 
     private static class UserChild extends User {
         UserChild(Long id, String name, int age, List<Allergy> allergies) {
@@ -26,7 +30,7 @@ public class UserTest {
     }
 
     @Test
-    void gettersAndSetters() {
+    void testGettersAndSetters() {
         User user = new User(1L, "Pepe", 20, null);
 
         assertEquals(1L, user.getId());
@@ -46,63 +50,63 @@ public class UserTest {
     }
 
     @Test
-    void equalsAndHashCodeCoverBranches() {
+    void testEqualsAndHashCode() {
         List<Allergy> allergies = List.of(new Allergy("Pollen", 2));
 
-        User base = new User(1L, "Pepe", 20, allergies);
-        User sameValues = new User(1L, "Pepe", 20, List.of(new Allergy("Pollen", 2)));
+        User baseUser = new User(1L, "Pepe", 20, allergies);
+        User sameValuesUser = new User(1L, "Pepe", 20, List.of(new Allergy("Pollen", 2)));
         User nullAllergiesA = new User(1L, "Pepe", 20, null);
         User nullAllergiesB = new User(1L, "Pepe", 20, null);
         User nullFieldsA = new User(null, null, 20, null);
         User nullFieldsB = new User(null, null, 20, null);
 
-        assertEquals(base, base);
-        assertEquals(base, sameValues);
-        assertEquals(base.hashCode(), sameValues.hashCode());
+        assertEquals(baseUser, baseUser);
+        assertEquals(baseUser, sameValuesUser);
+        assertEquals(baseUser.hashCode(), sameValuesUser.hashCode());
 
         assertEquals(nullAllergiesA, nullAllergiesB);
         assertEquals(nullFieldsA, nullFieldsB);
         assertEquals(nullFieldsA.hashCode(), nullFieldsB.hashCode());
-        assertNotEquals(nullAllergiesA, base);
-        assertNotEquals(base, nullAllergiesA);
+        assertNotEquals(nullAllergiesA, baseUser);
+        assertNotEquals(baseUser, nullAllergiesA);
 
-        assertNotEquals(base, null);
-        assertNotEquals(base, "not-a-user");
-        assertNotEquals(base, new User(2L, "Pepe", 20, allergies));
-        assertNotEquals(base, new User(1L, "Paco", 20, allergies));
-        assertNotEquals(base, new User(1L, "Pepe", 21, allergies));
-        assertNotEquals(base, new User(1L, "Pepe", 20, List.of(new Allergy("Dust", 1))));
-        assertNotEquals(base, new User(null, "Pepe", 20, allergies));
-        assertNotEquals(base, new User(1L, null, 20, allergies));
-        assertNotEquals(new User(1L, null, 20, allergies), base);
+        assertNotEquals(baseUser, null);
+        assertNotEquals(baseUser, "not-a-user");
+        assertNotEquals(baseUser, new User(2L, "Pepe", 20, allergies));
+        assertNotEquals(baseUser, new User(1L, "Paco", 20, allergies));
+        assertNotEquals(baseUser, new User(1L, "Pepe", 21, allergies));
+        assertNotEquals(baseUser, new User(1L, "Pepe", 20, List.of(new Allergy("Dust", 1))));
+        assertNotEquals(baseUser, new User(null, "Pepe", 20, allergies));
+        assertNotEquals(baseUser, new User(1L, null, 20, allergies));
+        assertNotEquals(new User(1L, null, 20, allergies), baseUser);
     }
 
     @Test
-    void equalsWithSubclassSameState() {
-        User base = new User(1L, "Pepe", 20, List.of(new Allergy("Pollen", 2)));
-        User child = new UserChild(1L, "Pepe", 20, List.of(new Allergy("Pollen", 2)));
+    void testEqualsWithSubclassMatch() {
+        User baseUser = new User(1L, "Pepe", 20, List.of(new Allergy("Pollen", 2)));
+        User childUser = new UserChild(1L, "Pepe", 20, List.of(new Allergy("Pollen", 2)));
 
-        assertEquals(base, child);
-        assertEquals(child, base);
-        assertEquals(base.hashCode(), child.hashCode());
+        assertEquals(baseUser, childUser);
+        assertEquals(childUser, baseUser);
+        assertEquals(baseUser.hashCode(), childUser.hashCode());
     }
 
     @Test
-    void equalsWithSubclassCanEqualFalse() {
-        User base = new User(1L, "Pepe", 20, List.of(new Allergy("Pollen", 2)));
-        User strict = new UserChildStrict(1L, "Pepe", 20, List.of(new Allergy("Pollen", 2)));
+    void testEqualsWithStrictSubclassMismatch() {
+        User baseUser = new User(1L, "Pepe", 20, List.of(new Allergy("Pollen", 2)));
+        User strictChildUser = new UserChildStrict(1L, "Pepe", 20, List.of(new Allergy("Pollen", 2)));
 
-        assertFalse(base.equals(strict));
-        assertTrue(strict.equals(base));
+        assertFalse(baseUser.equals(strictChildUser));
+        assertTrue(strictChildUser.equals(baseUser));
     }
 
     @Test
-    void toStringContainsUsefulFields() {
+    void testToStringContainsEssentialFields() {
         User user = new User(1L, "Pepe", 20, null);
-        String text = user.toString();
+        String toStringOutput = user.toString();
 
-        assertTrue(text.contains("User"));
-        assertTrue(text.contains("Pepe"));
-        assertTrue(text.contains("20"));
+        assertTrue(toStringOutput.contains("User"));
+        assertTrue(toStringOutput.contains("Pepe"));
+        assertTrue(toStringOutput.contains("20"));
     }
 }

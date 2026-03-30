@@ -26,39 +26,43 @@ class UserServiceExtraTest {
     private UserService userService;
 
     @Test
-    void testBlankName() {
+    void testBlankNameUsesDefault() {
         when(appConfig.getCommon().getDefaults().getName()).thenReturn("DefaultName");
 
         UserRequest request = new UserRequest("   ", 25, List.of(new Allergy("Pollen", 2)));
-        User saved = userService.saveUser(request);
-        assertEquals("DefaultName", saved.getName(), "Empty blank names should use default");
+        User savedUser = userService.saveUser(request);
+
+        assertEquals("DefaultName", savedUser.getName());
     }
 
     @Test
-    void testNegativeAge() {
+    void testNegativeAgeUsesDefault() {
         when(appConfig.getCommon().getDefaults().getAge()).thenReturn(18);
 
         UserRequest request = new UserRequest("John", -10, null);
-        User saved = userService.saveUser(request);
-        assertEquals(18, saved.getAge(), "Negative age should use default");
+        User savedUser = userService.saveUser(request);
+
+        assertEquals(18, savedUser.getAge());
     }
 
     @Test
-    void testZeroSizePagination() {
+    void testZeroSizePaginationReturnsEmptyList() {
         when(appConfig.getCommon().getPagination().getMaxSize()).thenReturn(100);
 
         userService.saveUser(new UserRequest("A", 20, null));
-        List<User> list = userService.getPaginatedUsers(1, 0);
-        assertEquals(0, list.size());
+
+        List<User> paginatedUsers = userService.getPaginatedUsers(1, 0);
+        assertEquals(0, paginatedUsers.size());
     }
 
     @Test
-    void testExceedMaxSizePagination() {
+    void testExceedMaxSizePaginationReturnsMaxAllowed() {
         when(appConfig.getCommon().getPagination().getMaxSize()).thenReturn(1);
 
         userService.saveUser(new UserRequest("A", 20, null));
         userService.saveUser(new UserRequest("B", 20, null));
-        List<User> list = userService.getPaginatedUsers(1, 10);
-        assertEquals(1, list.size());
+
+        List<User> paginatedUsers = userService.getPaginatedUsers(1, 10);
+        assertEquals(1, paginatedUsers.size());
     }
 }
