@@ -641,3 +641,1011 @@ java.lang.RuntimeException: boom
 2026-03-30 16:16:28,401 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling null with params [[Ljava.lang.String;@4365424d]
 2026-03-30 16:16:28,402 INFO [main] c.e.c.GFTFormacion [GFTFormacion.java:26] -- App name: GFTSpringBoot
 2026-03-30 16:16:28,403 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling null with result null in 2 ms
+2026-03-30 16:17:51,832 INFO [main] c.e.c.c.AppConfigIntegrationTest [StartupInfoLogger.java:54] -- Starting AppConfigIntegrationTest using Java 25.0.2 with PID 304 (started by pulz in C:\Users\pulz\Desktop\practica-api-s)
+2026-03-30 16:17:51,844 DEBUG [main] c.e.c.c.AppConfigIntegrationTest [StartupInfoLogger.java:55] -- Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-03-30 16:17:51,847 INFO [main] c.e.c.c.AppConfigIntegrationTest [SpringApplication.java:652] -- No active profile set, falling back to 1 default profile: "default"
+2026-03-30 16:17:53,273 INFO [background-preinit] o.h.v.i.u.Version [Version.java:18] -- HV000001: Hibernate Validator 9.0.1.Final
+2026-03-30 16:17:56,155 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with params []
+2026-03-30 16:17:56,157 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with result com.exampleinyection.clase2parte2.GFTFormacion$$Lambda/0x000000008f64ebd8@46862982 in 2 ms
+2026-03-30 16:17:57,919 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:60] -- Exposing 1 endpoint beneath base path '/actuator'
+2026-03-30 16:17:58,039 INFO [main] c.e.c.c.AppConfigIntegrationTest [StartupInfoLogger.java:60] -- Started AppConfigIntegrationTest in 7.99 seconds (process running for 14.758)
+2026-03-30 16:17:58,251 INFO [main] c.e.c.GFTFormacion [GFTFormacion.java:26] -- App name: GFTSpringBoot
+2026-03-30 16:17:59,893 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:17:59,894 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@7ba326f4 in 1 ms
+2026-03-30 16:17:59,896 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:17:59,897 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@7ba326f4 in 1 ms
+2026-03-30 16:17:59,911 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:17:59,912 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@7ba326f4 in 1 ms
+2026-03-30 16:17:59,913 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:17:59,913 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@7ba326f4 in 0 ms
+2026-03-30 16:17:59,914 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:17:59,914 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@7ba326f4 in 0 ms
+2026-03-30 16:17:59,914 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:17:59,914 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@7ba326f4 in 0 ms
+2026-03-30 16:17:59,921 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:17:59,922 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$DatabaseSettings@376a61c1 in 1 ms
+2026-03-30 16:17:59,931 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:17:59,932 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result Testing Environment Configuration in 1 ms
+2026-03-30 16:17:59,939 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:17:59,939 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$UpdateSettings@53ff1883 in 0 ms
+2026-03-30 16:17:59,940 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:17:59,940 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$UpdateSettings@53ff1883 in 0 ms
+2026-03-30 16:17:59,950 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:17:59,951 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result Testing Environment Configuration in 0 ms
+2026-03-30 16:17:59,951 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:17:59,952 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result TEST in 1 ms
+2026-03-30 16:17:59,953 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:17:59,953 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result 15 in 0 ms
+2026-03-30 16:17:59,953 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:17:59,954 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$DatabaseSettings@376a61c1 in 1 ms
+2026-03-30 16:17:59,954 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:17:59,955 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$DatabaseSettings@376a61c1 in 1 ms
+2026-03-30 16:17:59,955 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:17:59,956 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$UpdateSettings@53ff1883 in 1 ms
+2026-03-30 16:17:59,956 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:17:59,956 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$UpdateSettings@53ff1883 in 0 ms
+2026-03-30 16:17:59,956 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:17:59,958 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@7ba326f4 in 2 ms
+2026-03-30 16:17:59,958 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:17:59,958 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@7ba326f4 in 0 ms
+2026-03-30 16:17:59,959 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:17:59,960 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@7ba326f4 in 1 ms
+2026-03-30 16:17:59,995 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.controller.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-30 16:18:00,075 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.controller.UserControllerTest
+2026-03-30 16:18:00,076 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.controller.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-30 16:18:00,091 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.controller.UserControllerTest
+2026-03-30 16:18:00,101 INFO [main] o.s.b.d.r.RestartApplicationListener [RestartApplicationListener.java:74] -- Restart disabled due to context in which it is running
+2026-03-30 16:18:00,218 INFO [main] c.e.c.c.UserControllerTest [StartupInfoLogger.java:54] -- Starting UserControllerTest using Java 25.0.2 with PID 304 (started by pulz in C:\Users\pulz\Desktop\practica-api-s)
+2026-03-30 16:18:00,218 DEBUG [main] c.e.c.c.UserControllerTest [StartupInfoLogger.java:55] -- Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-03-30 16:18:00,219 INFO [main] c.e.c.c.UserControllerTest [SpringApplication.java:658] -- The following 1 profile is active: "local"
+2026-03-30 16:18:01,528 INFO [main] o.s.b.t.m.w.SpringBootMockServletContext [MockServletContext.java:431] -- Initializing Spring TestDispatcherServlet ''
+2026-03-30 16:18:01,529 INFO [main] o.s.t.w.s.TestDispatcherServlet [FrameworkServlet.java:523] -- Initializing Servlet ''
+2026-03-30 16:18:01,535 INFO [main] o.s.t.w.s.TestDispatcherServlet [FrameworkServlet.java:545] -- Completed initialization in 4 ms
+2026-03-30 16:18:01,596 INFO [main] c.e.c.c.UserControllerTest [StartupInfoLogger.java:60] -- Started UserControllerTest in 1.496 seconds (process running for 18.316)
+2026-03-30 16:18:01,597 INFO [main] c.e.c.GFTFormacion [GFTFormacion.java:26] -- App name: GFTSpringBoot
+2026-03-30 16:18:03,528 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.controller.ExceptionHandlerTest]: ExceptionHandlerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-30 16:18:03,551 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.controller.ExceptionHandlerTest
+2026-03-30 16:18:03,553 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.controller.ExceptionHandlerTest]: ExceptionHandlerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-30 16:18:03,572 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.controller.ExceptionHandlerTest
+2026-03-30 16:18:04,278 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.config.AppConfigTestWithPropertySourceFile]: AppConfigTestWithPropertySourceFile does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-30 16:18:04,282 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.config.AppConfigTestWithPropertySourceFile
+2026-03-30 16:18:04,287 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.config.AppConfigTestWithPropertySourceFile]: AppConfigTestWithPropertySourceFile does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-30 16:18:04,290 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.config.AppConfigTestWithPropertySourceFile
+2026-03-30 16:18:04,306 INFO [main] o.s.b.d.r.RestartApplicationListener [RestartApplicationListener.java:74] -- Restart disabled due to context in which it is running
+2026-03-30 16:18:04,410 INFO [main] c.e.c.c.AppConfigTestWithPropertySourceFile [StartupInfoLogger.java:54] -- Starting AppConfigTestWithPropertySourceFile using Java 25.0.2 with PID 304 (started by pulz in C:\Users\pulz\Desktop\practica-api-s)
+2026-03-30 16:18:04,411 DEBUG [main] c.e.c.c.AppConfigTestWithPropertySourceFile [StartupInfoLogger.java:55] -- Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-03-30 16:18:04,412 INFO [main] c.e.c.c.AppConfigTestWithPropertySourceFile [SpringApplication.java:652] -- No active profile set, falling back to 1 default profile: "default"
+2026-03-30 16:18:05,390 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with params []
+2026-03-30 16:18:05,391 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with result com.exampleinyection.clase2parte2.GFTFormacion$$Lambda/0x000000008f64ebd8@2ee7dec5 in 1 ms
+2026-03-30 16:18:05,824 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:60] -- Exposing 1 endpoint beneath base path '/actuator'
+2026-03-30 16:18:05,855 INFO [main] c.e.c.c.AppConfigTestWithPropertySourceFile [StartupInfoLogger.java:60] -- Started AppConfigTestWithPropertySourceFile in 1.55 seconds (process running for 22.574)
+2026-03-30 16:18:05,856 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling null with params [[Ljava.lang.String;@45cc0dda]
+2026-03-30 16:18:05,857 INFO [main] c.e.c.GFTFormacion [GFTFormacion.java:26] -- App name: GFTSpringBoot
+2026-03-30 16:18:05,858 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling null with result null in 2 ms
+2026-03-30 16:18:05,891 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:05,891 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result Integration Test Configuration in 0 ms
+2026-03-30 16:18:05,893 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:05,893 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$DatabaseSettings@637de7d9 in 0 ms
+2026-03-30 16:18:05,894 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:05,895 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$UpdateSettings@63ffb111 in 1 ms
+2026-03-30 16:18:05,896 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:05,896 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@bb9bbf7 in 0 ms
+2026-03-30 16:18:05,897 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:05,897 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@bb9bbf7 in 0 ms
+2026-03-30 16:18:05,897 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:05,898 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@bb9bbf7 in 1 ms
+2026-03-30 16:18:05,910 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:05,911 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@bb9bbf7 in 1 ms
+2026-03-30 16:18:05,920 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:05,921 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$DatabaseSettings@637de7d9 in 1 ms
+2026-03-30 16:18:06,691 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling java.lang.Object with params [value, 1]
+2026-03-30 16:18:06,693 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling java.lang.Object with result ok in 2 ms
+2026-03-30 16:18:06,702 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling java.lang.Object with params [value]
+2026-03-30 16:18:06,703 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:38] -- error calling java.lang.Object after 1 ms
+java.lang.RuntimeException: boom
+	at com.exampleinyection.clase2parte2.aspect.LoggingAspect.logAround(LoggingAspect.java:32)
+	at com.exampleinyection.clase2parte2.aspect.LoggingAspectTest.lambda$shouldRethrowExceptionWhenProceedFails$0(LoggingAspectTest.java:43)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:54)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3223)
+	at com.exampleinyection.clase2parte2.aspect.LoggingAspectTest.shouldRethrowExceptionWhenProceedFails(LoggingAspectTest.java:43)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:701)
+	at org.junit.platform.commons.support.ReflectionSupport.invokeMethod(ReflectionSupport.java:502)
+	at org.junit.jupiter.engine.support.MethodReflectionUtils.invoke(MethodReflectionUtils.java:45)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:61)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:124)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:163)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:148)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:123)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:99)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:66)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:47)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:39)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invokeVoid(InterceptingExecutableInvoker.java:71)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$0(TestMethodTestDescriptor.java:219)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:215)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:157)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:70)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:176)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:42)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:180)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:42)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:180)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:36)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:52)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.executeEngine(EngineExecutionOrchestrator.java:246)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.failOrExecuteEngine(EngineExecutionOrchestrator.java:218)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:179)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:66)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:157)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:65)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:125)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:58)
+	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$2(InterceptingLauncher.java:57)
+	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25)
+	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:56)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:58)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:81)
+	at com.intellij.junit6.JUnit6TestRunnerHelper.execute(JUnit6TestRunnerHelper.java:69)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:70)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:244)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:65)
+2026-03-30 16:18:06,738 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.config.AppConfigTestWithPropertySource]: AppConfigTestWithPropertySource does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-30 16:18:06,743 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.config.AppConfigTestWithPropertySource
+2026-03-30 16:18:06,747 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.config.AppConfigTestWithPropertySource]: AppConfigTestWithPropertySource does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-30 16:18:06,750 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.config.AppConfigTestWithPropertySource
+2026-03-30 16:18:06,758 INFO [main] o.s.b.d.r.RestartApplicationListener [RestartApplicationListener.java:74] -- Restart disabled due to context in which it is running
+2026-03-30 16:18:06,853 INFO [main] c.e.c.c.AppConfigTestWithPropertySource [StartupInfoLogger.java:54] -- Starting AppConfigTestWithPropertySource using Java 25.0.2 with PID 304 (started by pulz in C:\Users\pulz\Desktop\practica-api-s)
+2026-03-30 16:18:06,854 DEBUG [main] c.e.c.c.AppConfigTestWithPropertySource [StartupInfoLogger.java:55] -- Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-03-30 16:18:06,855 INFO [main] c.e.c.c.AppConfigTestWithPropertySource [SpringApplication.java:652] -- No active profile set, falling back to 1 default profile: "default"
+2026-03-30 16:18:07,509 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with params []
+2026-03-30 16:18:07,510 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with result com.exampleinyection.clase2parte2.GFTFormacion$$Lambda/0x000000008f64ebd8@7d98363f in 1 ms
+2026-03-30 16:18:07,832 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:60] -- Exposing 1 endpoint beneath base path '/actuator'
+2026-03-30 16:18:07,853 INFO [main] c.e.c.c.AppConfigTestWithPropertySource [StartupInfoLogger.java:60] -- Started AppConfigTestWithPropertySource in 1.095 seconds (process running for 24.573)
+2026-03-30 16:18:07,855 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling null with params [[Ljava.lang.String;@45cc0dda]
+2026-03-30 16:18:07,856 INFO [main] c.e.c.GFTFormacion [GFTFormacion.java:26] -- App name: GFTSpringBoot
+2026-03-30 16:18:07,856 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling null with result null in 1 ms
+2026-03-30 16:18:07,880 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:07,881 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result Test Application Custom Name in 1 ms
+2026-03-30 16:18:07,882 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:07,883 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$DatabaseSettings@601d1bc3 in 1 ms
+2026-03-30 16:18:07,884 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params [Updated Name]
+2026-03-30 16:18:07,885 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result null in 1 ms
+2026-03-30 16:18:07,886 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:07,887 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$DatabaseSettings@601d1bc3 in 1 ms
+2026-03-30 16:18:07,888 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:07,889 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result Updated Name in 1 ms
+2026-03-30 16:18:07,890 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:07,890 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$DatabaseSettings@601d1bc3 in 0 ms
+2026-03-30 16:18:07,891 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params [Test Application Custom Name]
+2026-03-30 16:18:07,891 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result null in 0 ms
+2026-03-30 16:18:07,892 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:07,892 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$DatabaseSettings@601d1bc3 in 0 ms
+2026-03-30 16:18:07,903 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:07,904 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@3185eb9f in 1 ms
+2026-03-30 16:18:07,906 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:07,908 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@3185eb9f in 0 ms
+2026-03-30 16:18:07,908 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:07,909 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@3185eb9f in 1 ms
+2026-03-30 16:18:07,910 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:07,911 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@3185eb9f in 1 ms
+2026-03-30 16:18:07,912 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:07,913 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@3185eb9f in 1 ms
+2026-03-30 16:18:07,916 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:07,917 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@3185eb9f in 1 ms
+2026-03-30 16:18:07,918 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:07,918 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@3185eb9f in 0 ms
+2026-03-30 16:18:07,919 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:07,920 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@3185eb9f in 1 ms
+2026-03-30 16:18:07,931 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:07,932 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result Test Application Custom Name in 1 ms
+2026-03-30 16:18:07,933 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:07,934 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$DatabaseSettings@601d1bc3 in 1 ms
+2026-03-30 16:18:07,935 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:07,936 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$UpdateSettings@29142c5 in 1 ms
+2026-03-30 16:18:07,937 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:07,937 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$UpdateSettings@29142c5 in 0 ms
+2026-03-30 16:18:07,938 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:07,938 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@3185eb9f in 0 ms
+2026-03-30 16:18:07,938 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:07,939 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@3185eb9f in 1 ms
+2026-03-30 16:18:07,939 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:07,940 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@3185eb9f in 1 ms
+2026-03-30 16:18:07,951 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:07,952 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$UpdateSettings@29142c5 in 1 ms
+2026-03-30 16:18:07,953 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:07,953 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$UpdateSettings@29142c5 in 0 ms
+2026-03-30 16:18:07,955 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:07,956 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$UpdateSettings@29142c5 in 1 ms
+2026-03-30 16:18:07,956 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:07,956 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$UpdateSettings@29142c5 in 0 ms
+2026-03-30 16:18:07,957 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:07,958 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$UpdateSettings@29142c5 in 1 ms
+2026-03-30 16:18:07,960 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:07,961 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$UpdateSettings@29142c5 in 1 ms
+2026-03-30 16:18:07,962 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:07,962 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$UpdateSettings@29142c5 in 1 ms
+2026-03-30 16:18:07,963 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:07,963 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$UpdateSettings@29142c5 in 0 ms
+2026-03-30 16:18:07,973 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:07,974 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@3185eb9f in 1 ms
+2026-03-30 16:18:07,975 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:07,975 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@3185eb9f in 0 ms
+2026-03-30 16:18:07,976 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:07,976 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@3185eb9f in 0 ms
+2026-03-30 16:18:07,977 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:07,978 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@3185eb9f in 1 ms
+2026-03-30 16:18:07,993 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.integration.FullIntegrationTest]: FullIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-30 16:18:08,010 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.integration.FullIntegrationTest
+2026-03-30 16:18:08,012 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.integration.FullIntegrationTest]: FullIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-30 16:18:08,015 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.integration.FullIntegrationTest
+2026-03-30 16:18:08,025 INFO [main] o.s.b.d.r.RestartApplicationListener [RestartApplicationListener.java:74] -- Restart disabled due to context in which it is running
+2026-03-30 16:18:08,122 INFO [main] c.e.c.i.FullIntegrationTest [StartupInfoLogger.java:54] -- Starting FullIntegrationTest using Java 25.0.2 with PID 304 (started by pulz in C:\Users\pulz\Desktop\practica-api-s)
+2026-03-30 16:18:08,123 DEBUG [main] c.e.c.i.FullIntegrationTest [StartupInfoLogger.java:55] -- Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-03-30 16:18:08,124 INFO [main] c.e.c.i.FullIntegrationTest [SpringApplication.java:658] -- The following 1 profile is active: "local"
+2026-03-30 16:18:08,727 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with params []
+2026-03-30 16:18:08,728 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with result com.exampleinyection.clase2parte2.GFTFormacion$$Lambda/0x000000008f64ebd8@69057d6b in 1 ms
+2026-03-30 16:18:09,019 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:60] -- Exposing 1 endpoint beneath base path '/actuator'
+2026-03-30 16:18:09,040 INFO [main] c.e.c.i.FullIntegrationTest [StartupInfoLogger.java:60] -- Started FullIntegrationTest in 1.015 seconds (process running for 25.76)
+2026-03-30 16:18:09,042 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling null with params [[Ljava.lang.String;@45cc0dda]
+2026-03-30 16:18:09,042 INFO [main] c.e.c.GFTFormacion [GFTFormacion.java:26] -- App name: GFTSpringBoot
+2026-03-30 16:18:09,043 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling null with result null in 1 ms
+2026-03-30 16:18:09,051 INFO [main] o.s.b.t.m.w.SpringBootMockServletContext [MockServletContext.java:431] -- Initializing Spring TestDispatcherServlet ''
+2026-03-30 16:18:09,052 INFO [main] o.s.t.w.s.TestDispatcherServlet [FrameworkServlet.java:523] -- Initializing Servlet ''
+2026-03-30 16:18:09,054 INFO [main] o.s.t.w.s.TestDispatcherServlet [FrameworkServlet.java:545] -- Completed initialization in 2 ms
+2026-03-30 16:18:09,075 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.controller.UserController with params [UserRequest[name=Paco, age=30, allergies=null]]
+2026-03-30 16:18:09,107 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.service.UserService with params [UserRequest[name=Paco, age=30, allergies=null]]
+2026-03-30 16:18:09,108 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.service.UserService with result User(id=1, name=Paco, age=30, allergies=null) in 1 ms
+2026-03-30 16:18:09,109 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.controller.UserController with result User(id=1, name=Paco, age=30, allergies=null) in 36 ms
+2026-03-30 16:18:09,122 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.controller.UserController with params [1, 10]
+2026-03-30 16:18:09,124 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.service.UserService with params [1, 10]
+2026-03-30 16:18:09,142 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:18:09,143 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@b1a32e0 in 1 ms
+2026-03-30 16:18:09,144 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.service.UserService with result [User(id=1, name=Paco, age=30, allergies=null)] in 20 ms
+2026-03-30 16:18:09,145 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.controller.UserController with result [User(id=1, name=Paco, age=30, allergies=null)] in 23 ms
+2026-03-30 16:18:09,419 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.GFTFormacionTests]: GFTFormacionTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-30 16:18:09,432 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.GFTFormacionTests
+2026-03-30 16:18:09,434 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.GFTFormacionTests]: GFTFormacionTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-30 16:18:09,436 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.GFTFormacionTests
+2026-03-30 16:18:09,451 INFO [main] o.s.b.d.r.RestartApplicationListener [RestartApplicationListener.java:74] -- Restart disabled due to context in which it is running
+2026-03-30 16:18:09,542 INFO [main] c.e.c.GFTFormacion [StartupInfoLogger.java:54] -- Starting GFTFormacion using Java 25.0.2 with PID 304 (started by pulz in C:\Users\pulz\Desktop\practica-api-s)
+2026-03-30 16:18:09,543 DEBUG [main] c.e.c.GFTFormacion [StartupInfoLogger.java:55] -- Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-03-30 16:18:09,543 INFO [main] c.e.c.GFTFormacion [SpringApplication.java:658] -- The following 1 profile is active: "local"
+2026-03-30 16:18:10,066 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with params []
+2026-03-30 16:18:10,066 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with result com.exampleinyection.clase2parte2.GFTFormacion$$Lambda/0x000000008f64ebd8@6195219b in 0 ms
+2026-03-30 16:18:10,195 INFO [main] c.e.c.GFTFormacion [StartupInfoLogger.java:60] -- Started GFTFormacion in 0.744 seconds (process running for 26.914)
+2026-03-30 16:18:10,196 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling null with params [[Ljava.lang.String;@2ceef106]
+2026-03-30 16:18:10,196 INFO [main] c.e.c.GFTFormacion [GFTFormacion.java:26] -- App name: GFTSpringBoot
+2026-03-30 16:18:10,198 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling null with result null in 2 ms
+2026-03-30 16:19:22,034 INFO [main] c.e.c.c.AppConfigIntegrationTest [StartupInfoLogger.java:54] -- Starting AppConfigIntegrationTest using Java 25.0.2 with PID 22004 (started by pulz in C:\Users\pulz\Desktop\practica-api-s)
+2026-03-30 16:19:22,037 DEBUG [main] c.e.c.c.AppConfigIntegrationTest [StartupInfoLogger.java:55] -- Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-03-30 16:19:22,038 INFO [main] c.e.c.c.AppConfigIntegrationTest [SpringApplication.java:652] -- No active profile set, falling back to 1 default profile: "default"
+2026-03-30 16:19:22,741 INFO [background-preinit] o.h.v.i.u.Version [Version.java:18] -- HV000001: Hibernate Validator 9.0.1.Final
+2026-03-30 16:19:24,836 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with params []
+2026-03-30 16:19:24,838 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with result com.exampleinyection.clase2parte2.GFTFormacion$$Lambda/0x0000000009644800@1aac0a47 in 2 ms
+2026-03-30 16:19:26,114 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:60] -- Exposing 1 endpoint beneath base path '/actuator'
+2026-03-30 16:19:26,224 INFO [main] c.e.c.c.AppConfigIntegrationTest [StartupInfoLogger.java:60] -- Started AppConfigIntegrationTest in 5.13 seconds (process running for 10.04)
+2026-03-30 16:19:26,242 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling null with params [[Ljava.lang.String;@2b6fcb9f]
+2026-03-30 16:19:26,243 INFO [main] c.e.c.GFTFormacion [GFTFormacion.java:26] -- App name: GFTSpringBoot
+2026-03-30 16:19:26,243 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling null with result null in 1 ms
+2026-03-30 16:19:27,505 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:27,506 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@3b5da0b0 in 1 ms
+2026-03-30 16:19:27,508 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:27,509 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@3b5da0b0 in 1 ms
+2026-03-30 16:19:27,523 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:27,523 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@3b5da0b0 in 1 ms
+2026-03-30 16:19:27,524 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:27,525 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@3b5da0b0 in 1 ms
+2026-03-30 16:19:27,525 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:27,526 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@3b5da0b0 in 1 ms
+2026-03-30 16:19:27,527 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:27,528 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@3b5da0b0 in 1 ms
+2026-03-30 16:19:27,537 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:27,537 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$DatabaseSettings@785a4557 in 1 ms
+2026-03-30 16:19:27,548 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:27,549 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result Testing Environment Configuration in 1 ms
+2026-03-30 16:19:27,557 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:27,558 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$UpdateSettings@625264ed in 1 ms
+2026-03-30 16:19:27,559 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:27,559 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$UpdateSettings@625264ed in 0 ms
+2026-03-30 16:19:27,569 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:27,570 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result Testing Environment Configuration in 1 ms
+2026-03-30 16:19:27,571 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:27,571 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result TEST in 0 ms
+2026-03-30 16:19:27,572 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:27,573 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result 15 in 1 ms
+2026-03-30 16:19:27,574 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:27,574 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$DatabaseSettings@785a4557 in 1 ms
+2026-03-30 16:19:27,574 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:27,575 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$DatabaseSettings@785a4557 in 1 ms
+2026-03-30 16:19:27,575 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:27,577 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$UpdateSettings@625264ed in 2 ms
+2026-03-30 16:19:27,578 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:27,579 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$UpdateSettings@625264ed in 1 ms
+2026-03-30 16:19:27,580 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:27,581 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@3b5da0b0 in 1 ms
+2026-03-30 16:19:27,582 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:27,583 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@3b5da0b0 in 1 ms
+2026-03-30 16:19:27,583 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:27,584 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@3b5da0b0 in 1 ms
+2026-03-30 16:19:27,617 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.controller.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-30 16:19:27,690 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.controller.UserControllerTest
+2026-03-30 16:19:27,692 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.controller.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-30 16:19:27,706 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.controller.UserControllerTest
+2026-03-30 16:19:27,719 INFO [main] o.s.b.d.r.RestartApplicationListener [RestartApplicationListener.java:74] -- Restart disabled due to context in which it is running
+2026-03-30 16:19:27,879 INFO [main] c.e.c.c.UserControllerTest [StartupInfoLogger.java:54] -- Starting UserControllerTest using Java 25.0.2 with PID 22004 (started by pulz in C:\Users\pulz\Desktop\practica-api-s)
+2026-03-30 16:19:27,881 DEBUG [main] c.e.c.c.UserControllerTest [StartupInfoLogger.java:55] -- Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-03-30 16:19:27,882 INFO [main] c.e.c.c.UserControllerTest [SpringApplication.java:658] -- The following 1 profile is active: "local"
+2026-03-30 16:19:29,044 INFO [main] o.s.b.t.m.w.SpringBootMockServletContext [MockServletContext.java:431] -- Initializing Spring TestDispatcherServlet ''
+2026-03-30 16:19:29,046 INFO [main] o.s.t.w.s.TestDispatcherServlet [FrameworkServlet.java:523] -- Initializing Servlet ''
+2026-03-30 16:19:29,052 INFO [main] o.s.t.w.s.TestDispatcherServlet [FrameworkServlet.java:545] -- Completed initialization in 5 ms
+2026-03-30 16:19:29,090 INFO [main] c.e.c.c.UserControllerTest [StartupInfoLogger.java:60] -- Started UserControllerTest in 1.372 seconds (process running for 12.906)
+2026-03-30 16:19:29,092 INFO [main] c.e.c.GFTFormacion [GFTFormacion.java:26] -- App name: GFTSpringBoot
+2026-03-30 16:19:30,532 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.controller.ExceptionHandlerTest]: ExceptionHandlerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-30 16:19:30,556 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.controller.ExceptionHandlerTest
+2026-03-30 16:19:30,557 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.controller.ExceptionHandlerTest]: ExceptionHandlerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-30 16:19:30,584 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.controller.ExceptionHandlerTest
+2026-03-30 16:19:31,252 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.config.AppConfigTestWithPropertySourceFile]: AppConfigTestWithPropertySourceFile does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-30 16:19:31,256 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.config.AppConfigTestWithPropertySourceFile
+2026-03-30 16:19:31,260 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.config.AppConfigTestWithPropertySourceFile]: AppConfigTestWithPropertySourceFile does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-30 16:19:31,263 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.config.AppConfigTestWithPropertySourceFile
+2026-03-30 16:19:31,272 INFO [main] o.s.b.d.r.RestartApplicationListener [RestartApplicationListener.java:74] -- Restart disabled due to context in which it is running
+2026-03-30 16:19:31,402 INFO [main] c.e.c.c.AppConfigTestWithPropertySourceFile [StartupInfoLogger.java:54] -- Starting AppConfigTestWithPropertySourceFile using Java 25.0.2 with PID 22004 (started by pulz in C:\Users\pulz\Desktop\practica-api-s)
+2026-03-30 16:19:31,403 DEBUG [main] c.e.c.c.AppConfigTestWithPropertySourceFile [StartupInfoLogger.java:55] -- Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-03-30 16:19:31,404 INFO [main] c.e.c.c.AppConfigTestWithPropertySourceFile [SpringApplication.java:652] -- No active profile set, falling back to 1 default profile: "default"
+2026-03-30 16:19:32,267 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with params []
+2026-03-30 16:19:32,268 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with result com.exampleinyection.clase2parte2.GFTFormacion$$Lambda/0x0000000009644800@569d7074 in 1 ms
+2026-03-30 16:19:32,613 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:60] -- Exposing 1 endpoint beneath base path '/actuator'
+2026-03-30 16:19:32,636 INFO [main] c.e.c.c.AppConfigTestWithPropertySourceFile [StartupInfoLogger.java:60] -- Started AppConfigTestWithPropertySourceFile in 1.365 seconds (process running for 16.452)
+2026-03-30 16:19:32,639 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling null with params [[Ljava.lang.String;@2b6fcb9f]
+2026-03-30 16:19:32,640 INFO [main] c.e.c.GFTFormacion [GFTFormacion.java:26] -- App name: GFTSpringBoot
+2026-03-30 16:19:32,642 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling null with result null in 2 ms
+2026-03-30 16:19:32,666 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:32,667 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result Integration Test Configuration in 1 ms
+2026-03-30 16:19:32,667 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:32,668 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$DatabaseSettings@22cf6c9c in 1 ms
+2026-03-30 16:19:32,669 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:32,670 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$UpdateSettings@31f5580b in 1 ms
+2026-03-30 16:19:32,671 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:32,671 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@3de4f936 in 0 ms
+2026-03-30 16:19:32,672 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:32,672 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@3de4f936 in 0 ms
+2026-03-30 16:19:32,673 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:32,673 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@3de4f936 in 0 ms
+2026-03-30 16:19:32,681 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:32,682 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@3de4f936 in 1 ms
+2026-03-30 16:19:32,691 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:32,692 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$DatabaseSettings@22cf6c9c in 1 ms
+2026-03-30 16:19:33,243 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling java.lang.Object with params [value, 1]
+2026-03-30 16:19:33,245 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling java.lang.Object with result ok in 3 ms
+2026-03-30 16:19:33,253 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling java.lang.Object with params [value]
+2026-03-30 16:19:33,254 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:38] -- error calling java.lang.Object after 1 ms
+java.lang.RuntimeException: boom
+	at com.exampleinyection.clase2parte2.aspect.LoggingAspect.logAround(LoggingAspect.java:32)
+	at com.exampleinyection.clase2parte2.aspect.LoggingAspectTest.lambda$shouldRethrowExceptionWhenProceedFails$0(LoggingAspectTest.java:43)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:54)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3223)
+	at com.exampleinyection.clase2parte2.aspect.LoggingAspectTest.shouldRethrowExceptionWhenProceedFails(LoggingAspectTest.java:43)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:701)
+	at org.junit.platform.commons.support.ReflectionSupport.invokeMethod(ReflectionSupport.java:502)
+	at org.junit.jupiter.engine.support.MethodReflectionUtils.invoke(MethodReflectionUtils.java:45)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:61)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:124)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:163)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:148)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:123)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:99)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:66)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:47)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:39)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invokeVoid(InterceptingExecutableInvoker.java:71)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$0(TestMethodTestDescriptor.java:219)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:215)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:157)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:70)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:176)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:42)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:180)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:42)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:180)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:36)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:52)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.executeEngine(EngineExecutionOrchestrator.java:246)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.failOrExecuteEngine(EngineExecutionOrchestrator.java:218)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:179)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:66)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:157)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:65)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:125)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:58)
+	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$2(InterceptingLauncher.java:57)
+	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25)
+	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:56)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:58)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:81)
+	at com.intellij.junit6.JUnit6TestRunnerHelper.execute(JUnit6TestRunnerHelper.java:69)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:70)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:244)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:65)
+2026-03-30 16:19:33,272 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.config.AppConfigTestWithPropertySource]: AppConfigTestWithPropertySource does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-30 16:19:33,275 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.config.AppConfigTestWithPropertySource
+2026-03-30 16:19:33,277 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.config.AppConfigTestWithPropertySource]: AppConfigTestWithPropertySource does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-30 16:19:33,280 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.config.AppConfigTestWithPropertySource
+2026-03-30 16:19:33,290 INFO [main] o.s.b.d.r.RestartApplicationListener [RestartApplicationListener.java:74] -- Restart disabled due to context in which it is running
+2026-03-30 16:19:33,377 INFO [main] c.e.c.c.AppConfigTestWithPropertySource [StartupInfoLogger.java:54] -- Starting AppConfigTestWithPropertySource using Java 25.0.2 with PID 22004 (started by pulz in C:\Users\pulz\Desktop\practica-api-s)
+2026-03-30 16:19:33,377 DEBUG [main] c.e.c.c.AppConfigTestWithPropertySource [StartupInfoLogger.java:55] -- Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-03-30 16:19:33,379 INFO [main] c.e.c.c.AppConfigTestWithPropertySource [SpringApplication.java:652] -- No active profile set, falling back to 1 default profile: "default"
+2026-03-30 16:19:34,071 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with params []
+2026-03-30 16:19:34,072 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with result com.exampleinyection.clase2parte2.GFTFormacion$$Lambda/0x0000000009644800@6f914212 in 1 ms
+2026-03-30 16:19:34,345 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:60] -- Exposing 1 endpoint beneath base path '/actuator'
+2026-03-30 16:19:34,371 INFO [main] c.e.c.c.AppConfigTestWithPropertySource [StartupInfoLogger.java:60] -- Started AppConfigTestWithPropertySource in 1.081 seconds (process running for 18.186)
+2026-03-30 16:19:34,373 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling null with params [[Ljava.lang.String;@2b6fcb9f]
+2026-03-30 16:19:34,374 INFO [main] c.e.c.GFTFormacion [GFTFormacion.java:26] -- App name: GFTSpringBoot
+2026-03-30 16:19:34,375 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling null with result null in 2 ms
+2026-03-30 16:19:34,397 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:34,398 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result Test Application Custom Name in 1 ms
+2026-03-30 16:19:34,399 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:34,400 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$DatabaseSettings@4c97e3d5 in 1 ms
+2026-03-30 16:19:34,401 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params [Updated Name]
+2026-03-30 16:19:34,402 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result null in 1 ms
+2026-03-30 16:19:34,403 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:34,403 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$DatabaseSettings@4c97e3d5 in 0 ms
+2026-03-30 16:19:34,404 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:34,405 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result Updated Name in 1 ms
+2026-03-30 16:19:34,406 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:34,406 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$DatabaseSettings@4c97e3d5 in 0 ms
+2026-03-30 16:19:34,407 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params [Test Application Custom Name]
+2026-03-30 16:19:34,407 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result null in 0 ms
+2026-03-30 16:19:34,407 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:34,408 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$DatabaseSettings@4c97e3d5 in 1 ms
+2026-03-30 16:19:34,418 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:34,418 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@485902cd in 1 ms
+2026-03-30 16:19:34,419 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:34,420 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@485902cd in 1 ms
+2026-03-30 16:19:34,420 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:34,421 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@485902cd in 1 ms
+2026-03-30 16:19:34,421 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:34,422 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@485902cd in 0 ms
+2026-03-30 16:19:34,422 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:34,423 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@485902cd in 1 ms
+2026-03-30 16:19:34,423 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:34,424 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@485902cd in 1 ms
+2026-03-30 16:19:34,425 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:34,425 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@485902cd in 0 ms
+2026-03-30 16:19:34,426 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:34,427 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@485902cd in 1 ms
+2026-03-30 16:19:34,435 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:34,437 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result Test Application Custom Name in 2 ms
+2026-03-30 16:19:34,438 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:34,439 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$DatabaseSettings@4c97e3d5 in 1 ms
+2026-03-30 16:19:34,440 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:34,440 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$UpdateSettings@5bf9bb2 in 0 ms
+2026-03-30 16:19:34,441 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:34,442 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$UpdateSettings@5bf9bb2 in 1 ms
+2026-03-30 16:19:34,442 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:34,443 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@485902cd in 1 ms
+2026-03-30 16:19:34,444 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:34,446 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@485902cd in 2 ms
+2026-03-30 16:19:34,447 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:34,447 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@485902cd in 0 ms
+2026-03-30 16:19:34,458 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:34,458 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$UpdateSettings@5bf9bb2 in 0 ms
+2026-03-30 16:19:34,459 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:34,460 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$UpdateSettings@5bf9bb2 in 1 ms
+2026-03-30 16:19:34,461 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:34,462 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$UpdateSettings@5bf9bb2 in 1 ms
+2026-03-30 16:19:34,463 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:34,463 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$UpdateSettings@5bf9bb2 in 0 ms
+2026-03-30 16:19:34,464 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:34,464 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$UpdateSettings@5bf9bb2 in 0 ms
+2026-03-30 16:19:34,466 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:34,468 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$UpdateSettings@5bf9bb2 in 2 ms
+2026-03-30 16:19:34,469 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:34,470 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$UpdateSettings@5bf9bb2 in 1 ms
+2026-03-30 16:19:34,470 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:34,471 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$UpdateSettings@5bf9bb2 in 1 ms
+2026-03-30 16:19:34,476 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:34,478 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@485902cd in 2 ms
+2026-03-30 16:19:34,482 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:34,482 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@485902cd in 0 ms
+2026-03-30 16:19:34,483 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:34,484 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@485902cd in 1 ms
+2026-03-30 16:19:34,485 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:34,486 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@485902cd in 1 ms
+2026-03-30 16:19:34,508 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.integration.FullIntegrationTest]: FullIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-30 16:19:34,527 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.integration.FullIntegrationTest
+2026-03-30 16:19:34,529 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.integration.FullIntegrationTest]: FullIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-30 16:19:34,532 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.integration.FullIntegrationTest
+2026-03-30 16:19:34,541 INFO [main] o.s.b.d.r.RestartApplicationListener [RestartApplicationListener.java:74] -- Restart disabled due to context in which it is running
+2026-03-30 16:19:34,642 INFO [main] c.e.c.i.FullIntegrationTest [StartupInfoLogger.java:54] -- Starting FullIntegrationTest using Java 25.0.2 with PID 22004 (started by pulz in C:\Users\pulz\Desktop\practica-api-s)
+2026-03-30 16:19:34,643 DEBUG [main] c.e.c.i.FullIntegrationTest [StartupInfoLogger.java:55] -- Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-03-30 16:19:34,648 INFO [main] c.e.c.i.FullIntegrationTest [SpringApplication.java:658] -- The following 1 profile is active: "local"
+2026-03-30 16:19:35,333 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with params []
+2026-03-30 16:19:35,334 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with result com.exampleinyection.clase2parte2.GFTFormacion$$Lambda/0x0000000009644800@3a95898c in 1 ms
+2026-03-30 16:19:35,759 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:60] -- Exposing 1 endpoint beneath base path '/actuator'
+2026-03-30 16:19:35,787 INFO [main] c.e.c.i.FullIntegrationTest [StartupInfoLogger.java:60] -- Started FullIntegrationTest in 1.247 seconds (process running for 19.603)
+2026-03-30 16:19:35,812 INFO [main] c.e.c.GFTFormacion [GFTFormacion.java:26] -- App name: GFTSpringBoot
+2026-03-30 16:19:35,824 INFO [main] o.s.b.t.m.w.SpringBootMockServletContext [MockServletContext.java:431] -- Initializing Spring TestDispatcherServlet ''
+2026-03-30 16:19:35,826 INFO [main] o.s.t.w.s.TestDispatcherServlet [FrameworkServlet.java:523] -- Initializing Servlet ''
+2026-03-30 16:19:35,830 INFO [main] o.s.t.w.s.TestDispatcherServlet [FrameworkServlet.java:545] -- Completed initialization in 4 ms
+2026-03-30 16:19:35,853 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.controller.UserController with params [UserRequest[name=Paco, age=30, allergies=null]]
+2026-03-30 16:19:35,860 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.service.UserService with params [UserRequest[name=Paco, age=30, allergies=null]]
+2026-03-30 16:19:35,862 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.service.UserService with result User(id=1, name=Paco, age=30, allergies=null) in 2 ms
+2026-03-30 16:19:35,865 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.controller.UserController with result User(id=1, name=Paco, age=30, allergies=null) in 15 ms
+2026-03-30 16:19:35,875 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.controller.UserController with params [1, 10]
+2026-03-30 16:19:35,877 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.service.UserService with params [1, 10]
+2026-03-30 16:19:35,907 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:19:35,908 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@2f1e3e1c in 1 ms
+2026-03-30 16:19:35,909 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.service.UserService with result [User(id=1, name=Paco, age=30, allergies=null)] in 33 ms
+2026-03-30 16:19:35,911 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.controller.UserController with result [User(id=1, name=Paco, age=30, allergies=null)] in 36 ms
+2026-03-30 16:19:36,241 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.GFTFormacionTests]: GFTFormacionTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-30 16:19:36,259 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.GFTFormacionTests
+2026-03-30 16:19:36,261 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.GFTFormacionTests]: GFTFormacionTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-30 16:19:36,264 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.GFTFormacionTests
+2026-03-30 16:19:36,276 INFO [main] o.s.b.d.r.RestartApplicationListener [RestartApplicationListener.java:74] -- Restart disabled due to context in which it is running
+2026-03-30 16:19:36,411 INFO [main] c.e.c.GFTFormacion [StartupInfoLogger.java:54] -- Starting GFTFormacion using Java 25.0.2 with PID 22004 (started by pulz in C:\Users\pulz\Desktop\practica-api-s)
+2026-03-30 16:19:36,412 DEBUG [main] c.e.c.GFTFormacion [StartupInfoLogger.java:55] -- Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-03-30 16:19:36,413 INFO [main] c.e.c.GFTFormacion [SpringApplication.java:658] -- The following 1 profile is active: "local"
+2026-03-30 16:19:36,845 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with params []
+2026-03-30 16:19:36,850 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with result com.exampleinyection.clase2parte2.GFTFormacion$$Lambda/0x0000000009644800@12f35f55 in 5 ms
+2026-03-30 16:19:37,015 INFO [main] c.e.c.GFTFormacion [StartupInfoLogger.java:60] -- Started GFTFormacion in 0.739 seconds (process running for 20.832)
+2026-03-30 16:19:37,017 INFO [main] c.e.c.GFTFormacion [GFTFormacion.java:26] -- App name: GFTSpringBoot
+2026-03-30 16:25:04,878 INFO [SpringApplicationShutdownHook] o.s.b.t.GracefulShutdown [GracefulShutdown.java:54] -- Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-30 16:25:04,918 INFO [tomcat-shutdown] o.s.b.t.GracefulShutdown [GracefulShutdown.java:76] -- Graceful shutdown complete
+2026-03-30 16:25:16,920 INFO [restartedMain] c.e.c.GFTFormacion [StartupInfoLogger.java:54] -- Starting GFTFormacion using Java 25.0.2 with PID 12676 (C:\Users\pulz\Desktop\practica-api-s\target\classes started by pulz in C:\Users\pulz\Desktop\practica-api-s)
+2026-03-30 16:25:16,930 DEBUG [restartedMain] c.e.c.GFTFormacion [StartupInfoLogger.java:55] -- Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-03-30 16:25:16,932 INFO [restartedMain] c.e.c.GFTFormacion [SpringApplication.java:658] -- The following 1 profile is active: "local"
+2026-03-30 16:25:17,110 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [LogLevel.java:69] -- Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-30 16:25:17,110 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [LogLevel.java:69] -- For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-30 16:25:17,569 INFO [background-preinit] o.h.v.i.u.Version [Version.java:18] -- HV000001: Hibernate Validator 9.0.1.Final
+2026-03-30 16:25:20,292 INFO [restartedMain] o.s.b.t.TomcatWebServer [TomcatWebServer.java:114] -- Tomcat initialized with port 8080 (http)
+2026-03-30 16:25:20,321 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:168] -- Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-30 16:25:20,323 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:168] -- Starting service [Tomcat]
+2026-03-30 16:25:20,324 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:168] -- Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-30 16:25:20,407 INFO [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer [WebApplicationContextInitializer.java:77] -- Root WebApplicationContext: initialization completed in 3295 ms
+2026-03-30 16:25:20,997 DEBUG [restartedMain] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with params []
+2026-03-30 16:25:21,000 DEBUG [restartedMain] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with result com.exampleinyection.clase2parte2.GFTFormacion$$Lambda/0x000000001a58dff8@5ece7609 in 3 ms
+2026-03-30 16:25:22,049 INFO [restartedMain] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:60] -- Exposing 1 endpoint beneath base path '/actuator'
+2026-03-30 16:25:22,150 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:168] -- Starting ProtocolHandler ["http-nio-8080"]
+2026-03-30 16:25:22,195 INFO [restartedMain] o.s.b.t.TomcatWebServer [TomcatWebServer.java:240] -- Tomcat started on port 8080 (http) with context path '/'
+2026-03-30 16:25:22,216 INFO [restartedMain] c.e.c.GFTFormacion [StartupInfoLogger.java:60] -- Started GFTFormacion in 7.158 seconds (process running for 9.498)
+2026-03-30 16:25:22,257 INFO [restartedMain] c.e.c.GFTFormacion [GFTFormacion.java:26] -- App name: GFTSpringBoot
+2026-03-30 16:25:22,692 INFO [RMI TCP Connection(3)-10.254.83.123] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:168] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-30 16:25:22,693 INFO [RMI TCP Connection(3)-10.254.83.123] o.s.w.s.DispatcherServlet [FrameworkServlet.java:523] -- Initializing Servlet 'dispatcherServlet'
+2026-03-30 16:25:22,698 INFO [RMI TCP Connection(3)-10.254.83.123] o.s.w.s.DispatcherServlet [FrameworkServlet.java:545] -- Completed initialization in 5 ms
+2026-03-30 16:25:33,495 DEBUG [http-nio-8080-exec-1] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.controller.UserController with params [UserRequest[name=Juan, age=25, allergies=[]]]
+2026-03-30 16:25:33,513 DEBUG [http-nio-8080-exec-1] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.service.UserService with params [UserRequest[name=Juan, age=25, allergies=[]]]
+2026-03-30 16:25:33,513 DEBUG [http-nio-8080-exec-1] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.service.UserService with result User(id=1, name=Juan, age=25, allergies=[]) in 0 ms
+2026-03-30 16:25:33,516 DEBUG [http-nio-8080-exec-1] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.controller.UserController with result User(id=1, name=Juan, age=25, allergies=[]) in 22 ms
+2026-03-30 16:25:33,746 DEBUG [http-nio-8080-exec-2] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.controller.UserController with params [1, 10]
+2026-03-30 16:25:33,746 DEBUG [http-nio-8080-exec-2] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.service.UserService with params [1, 10]
+2026-03-30 16:25:33,765 DEBUG [http-nio-8080-exec-2] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:25:33,765 DEBUG [http-nio-8080-exec-2] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@23968f7c in 0 ms
+2026-03-30 16:25:33,766 DEBUG [http-nio-8080-exec-2] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.service.UserService with result [User(id=1, name=Juan, age=25, allergies=[])] in 20 ms
+2026-03-30 16:25:33,766 DEBUG [http-nio-8080-exec-2] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.controller.UserController with result [User(id=1, name=Juan, age=25, allergies=[])] in 21 ms
+2026-03-30 16:25:33,846 DEBUG [http-nio-8080-exec-3] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.controller.UserController with params [Juan]
+2026-03-30 16:25:33,847 DEBUG [http-nio-8080-exec-3] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.service.UserService with params [Juan]
+2026-03-30 16:25:33,855 DEBUG [http-nio-8080-exec-3] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.service.UserService with result [User(id=1, name=Juan, age=25, allergies=[])] in 8 ms
+2026-03-30 16:25:33,856 DEBUG [http-nio-8080-exec-3] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.controller.UserController with result <200 OK OK,[User(id=1, name=Juan, age=25, allergies=[])],[]> in 10 ms
+2026-03-30 16:27:40,320 DEBUG [http-nio-8080-exec-6] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.controller.UserController with params [UserRequest[name=QA_User, age=31, allergies=[Allergy(name=dust, severity=2)]]]
+2026-03-30 16:27:40,321 DEBUG [http-nio-8080-exec-6] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.service.UserService with params [UserRequest[name=QA_User, age=31, allergies=[Allergy(name=dust, severity=2)]]]
+2026-03-30 16:27:40,321 DEBUG [http-nio-8080-exec-6] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.service.UserService with result User(id=2, name=QA_User, age=31, allergies=[Allergy(name=dust, severity=2)]) in 0 ms
+2026-03-30 16:27:40,322 DEBUG [http-nio-8080-exec-6] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.controller.UserController with result User(id=2, name=QA_User, age=31, allergies=[Allergy(name=dust, severity=2)]) in 2 ms
+2026-03-30 16:27:40,679 DEBUG [http-nio-8080-exec-7] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.controller.UserController with params [2]
+2026-03-30 16:27:40,680 DEBUG [http-nio-8080-exec-7] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.service.UserService with params [2]
+2026-03-30 16:27:40,682 DEBUG [http-nio-8080-exec-7] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.service.UserService with result User(id=2, name=QA_User, age=31, allergies=[Allergy(name=dust, severity=2)]) in 2 ms
+2026-03-30 16:27:40,684 DEBUG [http-nio-8080-exec-7] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.controller.UserController with result <200 OK OK,User(id=2, name=QA_User, age=31, allergies=[Allergy(name=dust, severity=2)]),[]> in 5 ms
+2026-03-30 16:27:41,009 DEBUG [http-nio-8080-exec-8] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.controller.UserController with params [2, UserRequest[name=QA_User_Updated, age=32, allergies=[]]]
+2026-03-30 16:27:41,012 DEBUG [http-nio-8080-exec-8] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.service.UserService with params [2, UserRequest[name=QA_User_Updated, age=32, allergies=[]]]
+2026-03-30 16:27:41,012 DEBUG [http-nio-8080-exec-8] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:27:41,014 DEBUG [http-nio-8080-exec-8] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$UpdateSettings@27a434cb in 2 ms
+2026-03-30 16:27:41,015 DEBUG [http-nio-8080-exec-8] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.service.UserService with result User(id=2, name=QA_User_Updated, age=32, allergies=[]) in 4 ms
+2026-03-30 16:27:41,016 DEBUG [http-nio-8080-exec-8] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.controller.UserController with result <200 OK OK,User(id=2, name=QA_User_Updated, age=32, allergies=[]),[]> in 7 ms
+2026-03-30 16:27:41,226 DEBUG [http-nio-8080-exec-9] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.controller.UserController with params [QA_User]
+2026-03-30 16:27:41,226 DEBUG [http-nio-8080-exec-9] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.service.UserService with params [QA_User]
+2026-03-30 16:27:41,227 DEBUG [http-nio-8080-exec-9] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.service.UserService with result [User(id=2, name=QA_User_Updated, age=32, allergies=[])] in 1 ms
+2026-03-30 16:27:41,227 DEBUG [http-nio-8080-exec-9] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.controller.UserController with result <200 OK OK,[User(id=2, name=QA_User_Updated, age=32, allergies=[])],[]> in 1 ms
+2026-03-30 16:27:41,402 DEBUG [http-nio-8080-exec-10] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.controller.UserController with params [1, 10]
+2026-03-30 16:27:41,404 DEBUG [http-nio-8080-exec-10] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.service.UserService with params [1, 10]
+2026-03-30 16:27:41,405 DEBUG [http-nio-8080-exec-10] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:27:41,406 DEBUG [http-nio-8080-exec-10] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@23968f7c in 1 ms
+2026-03-30 16:27:41,406 DEBUG [http-nio-8080-exec-10] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.service.UserService with result [User(id=1, name=Juan, age=25, allergies=[]), User(id=2, name=QA_User_Updated, age=32, allergies=[])] in 2 ms
+2026-03-30 16:27:41,407 DEBUG [http-nio-8080-exec-10] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.controller.UserController with result [User(id=1, name=Juan, age=25, allergies=[]), User(id=2, name=QA_User_Updated, age=32, allergies=[])] in 5 ms
+2026-03-30 16:27:41,612 DEBUG [http-nio-8080-exec-1] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.controller.UserController with params [2]
+2026-03-30 16:27:41,614 DEBUG [http-nio-8080-exec-1] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.service.UserService with params [2]
+2026-03-30 16:27:41,615 DEBUG [http-nio-8080-exec-1] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.service.UserService with result null in 1 ms
+2026-03-30 16:27:41,615 DEBUG [http-nio-8080-exec-1] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.controller.UserController with result <204 NO_CONTENT No Content,[]> in 3 ms
+2026-03-30 16:27:41,841 DEBUG [http-nio-8080-exec-2] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.controller.UserController with params [2]
+2026-03-30 16:27:41,841 DEBUG [http-nio-8080-exec-2] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.service.UserService with params [2]
+2026-03-30 16:27:41,843 DEBUG [http-nio-8080-exec-2] c.e.c.a.LoggingAspect [LoggingAspect.java:38] -- error calling com.exampleinyection.clase2parte2.service.UserService after 2 ms
+com.exampleinyection.clase2parte2.exception.UserNotFoundException: No existe el usuario con id: 2
+	at com.exampleinyection.clase2parte2.service.UserService.lambda$getUserById$1(UserService.java:51)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.exampleinyection.clase2parte2.service.UserService.getUserById(UserService.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:82)
+	at com.exampleinyection.clase2parte2.aspect.LoggingAspect.logAround(LoggingAspect.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:648)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:630)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719)
+	at com.exampleinyection.clase2parte2.service.UserService$$SpringCGLIB$$0.getUserById(<generated>)
+	at com.exampleinyection.clase2parte2.controller.UserController.getUserById(UserController.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158)
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:172)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:82)
+	at com.exampleinyection.clase2parte2.aspect.LoggingAspect.logAround(LoggingAspect.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:648)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:630)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719)
+	at com.exampleinyection.clase2parte2.controller.UserController$$SpringCGLIB$$0.getUserById(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-03-30 16:27:41,849 DEBUG [http-nio-8080-exec-2] c.e.c.a.LoggingAspect [LoggingAspect.java:38] -- error calling com.exampleinyection.clase2parte2.controller.UserController after 8 ms
+com.exampleinyection.clase2parte2.exception.UserNotFoundException: No existe el usuario con id: 2
+	at com.exampleinyection.clase2parte2.service.UserService.lambda$getUserById$1(UserService.java:51)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.exampleinyection.clase2parte2.service.UserService.getUserById(UserService.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:82)
+	at com.exampleinyection.clase2parte2.aspect.LoggingAspect.logAround(LoggingAspect.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:648)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:630)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719)
+	at com.exampleinyection.clase2parte2.service.UserService$$SpringCGLIB$$0.getUserById(<generated>)
+	at com.exampleinyection.clase2parte2.controller.UserController.getUserById(UserController.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158)
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:172)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:82)
+	at com.exampleinyection.clase2parte2.aspect.LoggingAspect.logAround(LoggingAspect.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:648)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:630)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719)
+	at com.exampleinyection.clase2parte2.controller.UserController$$SpringCGLIB$$0.getUserById(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-03-30 16:27:41,858 DEBUG [http-nio-8080-exec-2] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.exception.GlobalExceptionHandler with params [com.exampleinyection.clase2parte2.exception.UserNotFoundException: No existe el usuario con id: 2]
+2026-03-30 16:27:41,860 DEBUG [http-nio-8080-exec-2] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.exception.GlobalExceptionHandler with result <404 NOT_FOUND Not Found,ErrorResponse(status=404, message=No existe el usuario con id: 2),[]> in 2 ms
+2026-03-30 16:27:41,864 WARN [http-nio-8080-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:248] -- Resolved [com.exampleinyection.clase2parte2.exception.UserNotFoundException: No existe el usuario con id: 2]
+2026-03-30 16:36:43,673 INFO [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [LocalDevToolsAutoConfiguration.java:214] -- Restarting due to 25 class path changes (0 additions, 25 deletions, 0 modifications)
+2026-03-30 16:36:43,710 INFO [Thread-1] o.s.b.t.GracefulShutdown [GracefulShutdown.java:54] -- Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-30 16:36:43,788 INFO [tomcat-shutdown] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:168] -- Pausing ProtocolHandler ["http-nio-8080"]
+2026-03-30 16:36:43,818 INFO [tomcat-shutdown] o.s.b.t.GracefulShutdown [GracefulShutdown.java:76] -- Graceful shutdown complete
+2026-03-30 16:36:43,821 INFO [Thread-1] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:168] -- Stopping ProtocolHandler ["http-nio-8080"]
+2026-03-30 16:36:49,535 INFO [restartedMain] c.e.c.GFTFormacion [StartupInfoLogger.java:54] -- Starting GFTFormacion using Java 25.0.2 with PID 12676 (C:\Users\pulz\Desktop\practica-api-s\target\classes started by pulz in C:\Users\pulz\Desktop\practica-api-s)
+2026-03-30 16:36:49,536 DEBUG [restartedMain] c.e.c.GFTFormacion [StartupInfoLogger.java:55] -- Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-03-30 16:36:49,536 INFO [restartedMain] c.e.c.GFTFormacion [SpringApplication.java:658] -- The following 1 profile is active: "local"
+2026-03-30 16:36:52,005 INFO [restartedMain] o.s.b.t.TomcatWebServer [TomcatWebServer.java:114] -- Tomcat initialized with port 8080 (http)
+2026-03-30 16:36:52,008 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:168] -- Starting service [Tomcat]
+2026-03-30 16:36:52,008 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:168] -- Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-30 16:36:52,092 INFO [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer [WebApplicationContextInitializer.java:77] -- Root WebApplicationContext: initialization completed in 2531 ms
+2026-03-30 16:36:52,878 INFO [restartedMain] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:60] -- Exposing 1 endpoint beneath base path '/actuator'
+2026-03-30 16:36:52,965 INFO [restartedMain] o.s.b.t.TomcatWebServer [TomcatWebServer.java:240] -- Tomcat started on port 8080 (http) with context path '/'
+2026-03-30 16:36:52,976 INFO [restartedMain] c.e.c.GFTFormacion [StartupInfoLogger.java:60] -- Started GFTFormacion in 3.815 seconds (process running for 700.257)
+2026-03-30 16:36:52,978 INFO [restartedMain] c.e.c.GFTFormacion [GFTFormacion.java:26] -- App name: GFTSpringBoot
+2026-03-30 16:36:52,988 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:66] -- Condition evaluation unchanged
+2026-03-30 16:36:57,444 INFO [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [LocalDevToolsAutoConfiguration.java:214] -- Restarting due to 18 class path changes (18 additions, 0 deletions, 0 modifications)
+2026-03-30 16:36:57,447 INFO [Thread-5] o.s.b.t.GracefulShutdown [GracefulShutdown.java:54] -- Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-30 16:36:57,470 INFO [tomcat-shutdown] o.s.b.t.GracefulShutdown [GracefulShutdown.java:76] -- Graceful shutdown complete
+2026-03-30 16:36:57,733 INFO [restartedMain] c.e.c.GFTFormacion [StartupInfoLogger.java:54] -- Starting GFTFormacion using Java 25.0.2 with PID 12676 (C:\Users\pulz\Desktop\practica-api-s\target\classes started by pulz in C:\Users\pulz\Desktop\practica-api-s)
+2026-03-30 16:36:57,737 DEBUG [restartedMain] c.e.c.GFTFormacion [StartupInfoLogger.java:55] -- Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-03-30 16:36:57,738 INFO [restartedMain] c.e.c.GFTFormacion [SpringApplication.java:658] -- The following 1 profile is active: "local"
+2026-03-30 16:36:59,758 INFO [restartedMain] o.s.b.t.TomcatWebServer [TomcatWebServer.java:114] -- Tomcat initialized with port 8080 (http)
+2026-03-30 16:36:59,760 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:168] -- Starting service [Tomcat]
+2026-03-30 16:36:59,763 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:168] -- Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-30 16:36:59,823 INFO [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer [WebApplicationContextInitializer.java:77] -- Root WebApplicationContext: initialization completed in 2069 ms
+2026-03-30 16:37:00,349 DEBUG [restartedMain] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with params []
+2026-03-30 16:37:00,350 DEBUG [restartedMain] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with result com.exampleinyection.clase2parte2.GFTFormacion$$Lambda/0x000000001a624ba8@5d626541 in 2 ms
+2026-03-30 16:37:00,852 INFO [restartedMain] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:60] -- Exposing 1 endpoint beneath base path '/actuator'
+2026-03-30 16:37:01,327 INFO [restartedMain] o.s.b.t.TomcatWebServer [TomcatWebServer.java:240] -- Tomcat started on port 8080 (http) with context path '/'
+2026-03-30 16:37:01,413 INFO [restartedMain] c.e.c.GFTFormacion [StartupInfoLogger.java:60] -- Started GFTFormacion in 3.806 seconds (process running for 708.694)
+2026-03-30 16:37:01,417 INFO [restartedMain] c.e.c.GFTFormacion [GFTFormacion.java:26] -- App name: GFTSpringBoot
+2026-03-30 16:37:01,419 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:66] -- Condition evaluation unchanged
+2026-03-30 16:37:23,912 INFO [main] c.e.c.c.AppConfigIntegrationTest [StartupInfoLogger.java:54] -- Starting AppConfigIntegrationTest using Java 21.0.10 with PID 18288 (started by pulz in C:\Users\pulz\Desktop\practica-api-s)
+2026-03-30 16:37:23,919 DEBUG [main] c.e.c.c.AppConfigIntegrationTest [StartupInfoLogger.java:55] -- Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-03-30 16:37:23,922 INFO [main] c.e.c.c.AppConfigIntegrationTest [SpringApplication.java:652] -- No active profile set, falling back to 1 default profile: "default"
+2026-03-30 16:37:25,937 INFO [background-preinit] o.h.v.i.u.Version [Version.java:18] -- HV000001: Hibernate Validator 9.0.1.Final
+2026-03-30 16:37:30,585 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with params []
+2026-03-30 16:37:30,589 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with result com.exampleinyection.clase2parte2.GFTFormacion$$Lambda/0x000001b6816d6000@4e3931 in 4 ms
+2026-03-30 16:37:32,724 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:60] -- Exposing 1 endpoint beneath base path '/actuator'
+2026-03-30 16:37:32,972 INFO [main] c.e.c.c.AppConfigIntegrationTest [StartupInfoLogger.java:60] -- Started AppConfigIntegrationTest in 12.18 seconds (process running for 26.639)
+2026-03-30 16:37:33,202 INFO [main] c.e.c.GFTFormacion [GFTFormacion.java:26] -- App name: GFTSpringBoot
+2026-03-30 16:37:33,381 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:37:33,382 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@1f8d3539 in 1 ms
+2026-03-30 16:37:33,385 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:37:33,387 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@1f8d3539 in 2 ms
+2026-03-30 16:37:33,413 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:37:33,414 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@1f8d3539 in 1 ms
+2026-03-30 16:37:33,415 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:37:33,416 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@1f8d3539 in 1 ms
+2026-03-30 16:37:33,417 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:37:33,418 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@1f8d3539 in 1 ms
+2026-03-30 16:37:33,420 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:37:33,422 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@1f8d3539 in 2 ms
+2026-03-30 16:37:33,443 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:37:33,445 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$DatabaseSettings@2159c25e in 2 ms
+2026-03-30 16:37:33,463 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:37:33,465 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result Testing Environment Configuration in 2 ms
+2026-03-30 16:37:33,482 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:37:33,484 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$UpdateSettings@40e86f55 in 2 ms
+2026-03-30 16:37:33,485 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:37:33,486 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$UpdateSettings@40e86f55 in 1 ms
+2026-03-30 16:37:33,505 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:37:33,508 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result Testing Environment Configuration in 3 ms
+2026-03-30 16:37:33,511 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:37:33,512 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result TEST in 2 ms
+2026-03-30 16:37:33,514 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:37:33,516 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result 15 in 2 ms
+2026-03-30 16:37:33,530 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:37:33,531 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$DatabaseSettings@2159c25e in 1 ms
+2026-03-30 16:37:33,533 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:37:33,534 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$DatabaseSettings@2159c25e in 1 ms
+2026-03-30 16:37:33,535 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:37:33,537 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$UpdateSettings@40e86f55 in 2 ms
+2026-03-30 16:37:33,538 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:37:33,539 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$UpdateSettings@40e86f55 in 1 ms
+2026-03-30 16:37:33,541 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:37:33,542 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@1f8d3539 in 1 ms
+2026-03-30 16:37:33,543 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:37:33,544 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@1f8d3539 in 1 ms
+2026-03-30 16:37:33,545 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:37:33,546 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@1f8d3539 in 1 ms
+2026-03-30 16:37:34,209 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.controller.ExceptionHandlerTest]: ExceptionHandlerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-30 16:37:34,326 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.controller.ExceptionHandlerTest
+2026-03-30 16:37:34,330 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.controller.ExceptionHandlerTest]: ExceptionHandlerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-30 16:37:34,353 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.controller.ExceptionHandlerTest
+2026-03-30 16:37:34,368 INFO [main] o.s.b.d.r.RestartApplicationListener [RestartApplicationListener.java:74] -- Restart disabled due to context in which it is running
+2026-03-30 16:37:34,621 INFO [main] c.e.c.c.ExceptionHandlerTest [StartupInfoLogger.java:54] -- Starting ExceptionHandlerTest using Java 21.0.10 with PID 18288 (started by pulz in C:\Users\pulz\Desktop\practica-api-s)
+2026-03-30 16:37:34,622 DEBUG [main] c.e.c.c.ExceptionHandlerTest [StartupInfoLogger.java:55] -- Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-03-30 16:37:34,624 INFO [main] c.e.c.c.ExceptionHandlerTest [SpringApplication.java:658] -- The following 1 profile is active: "local"
+2026-03-30 16:37:36,794 INFO [main] o.s.b.t.m.w.SpringBootMockServletContext [MockServletContext.java:431] -- Initializing Spring TestDispatcherServlet ''
+2026-03-30 16:37:36,797 INFO [main] o.s.t.w.s.TestDispatcherServlet [FrameworkServlet.java:523] -- Initializing Servlet ''
+2026-03-30 16:37:36,817 INFO [main] o.s.t.w.s.TestDispatcherServlet [FrameworkServlet.java:545] -- Completed initialization in 7 ms
+2026-03-30 16:37:36,964 INFO [main] c.e.c.c.ExceptionHandlerTest [StartupInfoLogger.java:60] -- Started ExceptionHandlerTest in 2.595 seconds (process running for 30.631)
+2026-03-30 16:37:36,966 INFO [main] c.e.c.GFTFormacion [GFTFormacion.java:26] -- App name: GFTSpringBoot
+2026-03-30 16:37:38,773 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.controller.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-30 16:37:38,813 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.controller.UserControllerTest
+2026-03-30 16:37:38,817 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.controller.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-30 16:37:38,854 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.controller.UserControllerTest
+2026-03-30 16:37:40,917 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.GFTFormacionTests]: GFTFormacionTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-30 16:37:40,985 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.GFTFormacionTests
+2026-03-30 16:37:40,990 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.GFTFormacionTests]: GFTFormacionTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-30 16:37:40,994 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.GFTFormacionTests
+2026-03-30 16:37:41,018 INFO [main] o.s.b.d.r.RestartApplicationListener [RestartApplicationListener.java:74] -- Restart disabled due to context in which it is running
+2026-03-30 16:37:41,240 INFO [main] c.e.c.GFTFormacionTests [StartupInfoLogger.java:54] -- Starting GFTFormacionTests using Java 21.0.10 with PID 18288 (started by pulz in C:\Users\pulz\Desktop\practica-api-s)
+2026-03-30 16:37:41,243 DEBUG [main] c.e.c.GFTFormacionTests [StartupInfoLogger.java:55] -- Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-03-30 16:37:41,244 INFO [main] c.e.c.GFTFormacionTests [SpringApplication.java:658] -- The following 1 profile is active: "local"
+2026-03-30 16:37:42,606 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with params []
+2026-03-30 16:37:42,608 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with result com.exampleinyection.clase2parte2.GFTFormacion$$Lambda/0x000001b6816d6000@2485325 in 2 ms
+2026-03-30 16:37:43,272 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:60] -- Exposing 1 endpoint beneath base path '/actuator'
+2026-03-30 16:37:43,326 INFO [main] c.e.c.GFTFormacionTests [StartupInfoLogger.java:60] -- Started GFTFormacionTests in 2.309 seconds (process running for 36.994)
+2026-03-30 16:37:43,330 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling null with params [[Ljava.lang.String;@1a632663]
+2026-03-30 16:37:43,334 INFO [main] c.e.c.GFTFormacion [GFTFormacion.java:26] -- App name: GFTSpringBoot
+2026-03-30 16:37:43,336 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling null with result null in 5 ms
+2026-03-30 16:37:43,350 INFO [main] o.s.b.d.r.RestartApplicationListener [RestartApplicationListener.java:74] -- Restart disabled due to context in which it is running
+2026-03-30 16:37:43,512 INFO [main] c.e.c.GFTFormacion [StartupInfoLogger.java:54] -- Starting GFTFormacion using Java 21.0.10 with PID 18288 (started by pulz in C:\Users\pulz\Desktop\practica-api-s)
+2026-03-30 16:37:43,513 DEBUG [main] c.e.c.GFTFormacion [StartupInfoLogger.java:55] -- Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-03-30 16:37:43,515 INFO [main] c.e.c.GFTFormacion [SpringApplication.java:658] -- The following 1 profile is active: "local"
+2026-03-30 16:37:44,255 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with params []
+2026-03-30 16:37:44,256 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with result com.exampleinyection.clase2parte2.GFTFormacion$$Lambda/0x000001b6816d6000@4860ff98 in 1 ms
+2026-03-30 16:37:44,505 INFO [main] c.e.c.GFTFormacion [StartupInfoLogger.java:60] -- Started GFTFormacion in 1.155 seconds (process running for 38.172)
+2026-03-30 16:37:44,508 INFO [main] c.e.c.GFTFormacion [GFTFormacion.java:26] -- App name: GFTSpringBoot
+2026-03-30 16:37:44,569 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.integration.FullIntegrationTest]: FullIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-30 16:37:44,597 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.integration.FullIntegrationTest
+2026-03-30 16:37:44,599 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.integration.FullIntegrationTest]: FullIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-30 16:37:44,602 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.integration.FullIntegrationTest
+2026-03-30 16:37:44,624 INFO [main] o.s.b.t.m.w.SpringBootMockServletContext [MockServletContext.java:431] -- Initializing Spring TestDispatcherServlet ''
+2026-03-30 16:37:44,626 INFO [main] o.s.t.w.s.TestDispatcherServlet [FrameworkServlet.java:523] -- Initializing Servlet ''
+2026-03-30 16:37:44,634 INFO [main] o.s.t.w.s.TestDispatcherServlet [FrameworkServlet.java:545] -- Completed initialization in 7 ms
+2026-03-30 16:37:44,680 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.controller.UserController with params [UserRequest[name=Paco, age=30, allergies=null]]
+2026-03-30 16:37:44,697 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.service.UserService with params [UserRequest[name=Paco, age=30, allergies=null]]
+2026-03-30 16:37:44,698 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.service.UserService with result User(id=1, name=Paco, age=30, allergies=null) in 2 ms
+2026-03-30 16:37:44,714 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.controller.UserController with result User(id=1, name=Paco, age=30, allergies=null) in 40 ms
+2026-03-30 16:37:44,735 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.controller.UserController with params [1, 10]
+2026-03-30 16:37:44,737 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.service.UserService with params [1, 10]
+2026-03-30 16:37:44,785 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-03-30 16:37:44,787 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@126606bc in 2 ms
+2026-03-30 16:37:44,789 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.service.UserService with result [User(id=1, name=Paco, age=30, allergies=null)] in 52 ms
+2026-03-30 16:37:44,790 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.controller.UserController with result [User(id=1, name=Paco, age=30, allergies=null)] in 55 ms
