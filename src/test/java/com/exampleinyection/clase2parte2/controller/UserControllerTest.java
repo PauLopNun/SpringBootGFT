@@ -1,6 +1,8 @@
 package com.exampleinyection.clase2parte2.controller;
 
 import com.exampleinyection.clase2parte2.config.AppConfig;
+import com.exampleinyection.clase2parte2.dto.AllergyDTO;
+import com.exampleinyection.clase2parte2.dto.UserDTO;
 import com.exampleinyection.clase2parte2.dto.UserRequest;
 import com.exampleinyection.clase2parte2.exception.InvalidUserException;
 import com.exampleinyection.clase2parte2.exception.UserNotFoundException;
@@ -148,6 +150,26 @@ class UserControllerTest {
 
         mockMvc.perform(get("/api/1"))
                 .andExpect(status().isInternalServerError());
+    }
+
+    @Test
+    void updateUserName() throws Exception {
+        mockMvc.perform(patch("/api/1/name").param("name", "NuevoNombre"))
+                .andExpect(status().isNoContent());
+
+        verify(userService).updateUserName(1L, "NuevoNombre");
+    }
+
+    @Test
+    void getUsersWithAllergies() throws Exception {
+        when(userService.getUsersWithAllergies()).thenReturn(
+                List.of(new UserDTO(1L, "Pepe", 20, List.of(new AllergyDTO(1L, "Pollen", 1))))
+        );
+
+        mockMvc.perform(get("/api/users/allergies"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$[0].name").value("Pepe"))
+                .andExpect(jsonPath("$[0].allergies[0].name").value("Pollen"));
     }
 
     @Test

@@ -5,32 +5,41 @@ import com.exampleinyection.clase2parte2.model.User;
 import com.exampleinyection.clase2parte2.repository.AllergyRepository;
 import com.exampleinyection.clase2parte2.repository.UserRepository;
 import org.springframework.boot.CommandLineRunner;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
-@Configuration
-public class DataInitializer {
+import java.util.List;
 
-    @Bean
-    CommandLineRunner initData(UserRepository userRepository, AllergyRepository allergyRepository) {
-        return args -> {
-            for (int i = 1; i <= 30; i++) {
-                User user = new User();
-                user.setName("User " + i);
-                user.setAge(20 + (i % 50));
-                
-                userRepository.save(user);
+@Component
+public class DataInitializer implements CommandLineRunner {
 
-                for (int j = 1; j <= 5; j++) {
-                    Allergy allergy = new Allergy();
-                    allergy.setName("Allergy " + j + " del User " + i);
-                    allergy.setSeverity(j);
-                    allergy.setUser(user);
+    private final UserRepository userRepository;
+    private final AllergyRepository allergyRepository;
 
-                    allergyRepository.save(allergy);
-                }
-            }
-        };
+    public DataInitializer(UserRepository userRepository, AllergyRepository allergyRepository) {
+        this.userRepository = userRepository;
+        this.allergyRepository = allergyRepository;
+    }
+
+    @Override
+    @Transactional
+    public void run(String... args) {
+        // En M2M las alergias son entidades independientes, se crean una sola vez
+        List<Allergy> allergies = allergyRepository.saveAll(List.of(
+            new Allergy("Pollen",    1),
+            new Allergy("Peanuts",   3),
+            new Allergy("Gluten",    2),
+            new Allergy("Lactose",   2),
+            new Allergy("Shellfish", 4)
+        ));
+
+        for (int i = 1; i <= 30; i++) {
+            User user = new User();
+            user.setName("User " + i);
+            user.setAge(20 + (i % 50));
+            // Cada usuario comparte un subconjunto de las alergias comunes
+            user.setAllergies(allergies.subList(0, (i % 5) + 1));
+            userRepository.save(user);
+        }
     }
 }
-

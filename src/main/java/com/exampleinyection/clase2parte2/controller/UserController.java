@@ -1,6 +1,7 @@
 package com.exampleinyection.clase2parte2.controller;
 
 import com.exampleinyection.clase2parte2.config.AppConfig;
+import com.exampleinyection.clase2parte2.dto.UserDTO;
 import com.exampleinyection.clase2parte2.dto.UserRequest;
 import com.exampleinyection.clase2parte2.model.User;
 import com.exampleinyection.clase2parte2.service.UserService;
@@ -63,6 +64,11 @@ public class UserController {
     public ResponseEntity<Void> updateUserName(@PathVariable Long id, @RequestParam String name) {
         userService.updateUserName(id, name);
         return ResponseEntity.noContent().build();
+    }
+
+    @GetMapping("/users/allergies")
+    public List<UserDTO> getUsersWithAllergies() {
+        return userService.getUsersWithAllergies();
     }
 
     @GetMapping("/search")

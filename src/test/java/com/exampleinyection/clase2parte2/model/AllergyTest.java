@@ -2,6 +2,8 @@ package com.exampleinyection.clase2parte2.model;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class AllergyTest {
@@ -43,26 +45,29 @@ class AllergyTest {
         allergy.setId(1L);
         allergy.setName("Pollen");
         allergy.setSeverity(3);
+
         User user = new User();
         user.setId(2L);
-        allergy.setUser(user);
+        allergy.setUsers(List.of(user));
 
         assertEquals(1L, allergy.getId());
         assertEquals("Pollen", allergy.getName());
         assertEquals(3, allergy.getSeverity());
-        assertEquals(user, allergy.getUser());
+        assertEquals(1, allergy.getUsers().size());
+        assertEquals(2L, allergy.getUsers().get(0).getId());
     }
 
     @Test
     void testAllArgsConstructor() {
         User user = new User();
         user.setId(1L);
-        Allergy allergy = new Allergy(1L, "Cats", 5, user);
+        Allergy allergy = new Allergy(1L, "Cats", 5, List.of(user));
 
         assertEquals(1L, allergy.getId());
         assertEquals("Cats", allergy.getName());
         assertEquals(5, allergy.getSeverity());
-        assertNotNull(allergy.getUser());
+        assertNotNull(allergy.getUsers());
+        assertEquals(1, allergy.getUsers().size());
     }
 
     @Test
@@ -75,7 +80,7 @@ class AllergyTest {
         assertEquals(baseAllergy, baseAllergy);
         assertEquals(baseAllergy, sameValuesAllergy);
         assertEquals(baseAllergy.hashCode(), sameValuesAllergy.hashCode());
-        
+
         assertEquals(nullNameA, nullNameB);
         assertEquals(nullNameA.hashCode(), nullNameB.hashCode());
 
@@ -115,22 +120,39 @@ class AllergyTest {
         assertTrue(toStringOutput.contains("Dust"));
         assertTrue(toStringOutput.contains("2"));
     }
-    
+
     @Test
-    void testToDTO() {
-        Allergy allergy = new Allergy(1L, "Pollen", 3, new User());
-        Allergy dto = allergy.toDTO(allergy);
-        
-        assertNotNull(dto);
-        assertEquals(allergy.getId(), dto.getId());
-        assertEquals(allergy.getName(), dto.getName());
-        assertEquals(allergy.getSeverity(), dto.getSeverity());
-        assertNull(dto.getUser());
+    void testUsersRelationshipNullByDefault() {
+        Allergy allergy = new Allergy("Pollen", 1);
+        assertNull(allergy.getUsers());
     }
 
     @Test
-    void testToDTONull() {
-        Allergy allergy = new Allergy();
-        assertNull(allergy.toDTO(null));
+    void testAllArgsConstructorWithNullUsers() {
+        Allergy allergy = new Allergy(1L, "Pollen", 3, null);
+        assertEquals(1L, allergy.getId());
+        assertNull(allergy.getUsers());
+    }
+
+    @Test
+    void testEqualsAndHashCodeWithUsersField() {
+        User user = new User();
+        user.setId(1L);
+
+        Allergy withUsers     = new Allergy(1L, "Pollen", 1, List.of(user));
+        Allergy sameUsers     = new Allergy(1L, "Pollen", 1, List.of(user));
+        Allergy withoutUsers  = new Allergy(1L, "Pollen", 1, null);
+        Allergy differentUser = new Allergy(1L, "Pollen", 1, List.of(new User()));
+
+        // non-null users == non-null users (same list) → equal
+        assertEquals(withUsers, sameUsers);
+        assertEquals(withUsers.hashCode(), sameUsers.hashCode());
+
+        // non-null users vs null → not equal (both directions)
+        assertNotEquals(withUsers, withoutUsers);
+        assertNotEquals(withoutUsers, withUsers);
+
+        // non-null users vs different non-null users → not equal
+        assertNotEquals(withUsers, differentUser);
     }
 }

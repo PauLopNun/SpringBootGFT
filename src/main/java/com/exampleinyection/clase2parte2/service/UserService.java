@@ -1,6 +1,8 @@
 package com.exampleinyection.clase2parte2.service;
 
 import com.exampleinyection.clase2parte2.config.AppConfig;
+import com.exampleinyection.clase2parte2.dto.AllergyDTO;
+import com.exampleinyection.clase2parte2.dto.UserDTO;
 import com.exampleinyection.clase2parte2.dto.UserRequest;
 import com.exampleinyection.clase2parte2.exception.UserNotFoundException;
 import com.exampleinyection.clase2parte2.model.Allergy;
@@ -44,9 +46,6 @@ public class UserService {
 
         if (request.allergies() != null) {
             newUser.setAllergies(request.allergies());
-            for (Allergy allergy : request.allergies()) {
-                allergy.setUser(newUser);
-            }
         }
 
         if (userRepository != null) {
@@ -95,9 +94,6 @@ public class UserService {
         }
         if (request.allergies() != null) {
             existingUser.setAllergies(request.allergies());
-            for (Allergy allergy : request.allergies()) {
-                allergy.setUser(existingUser);
-            }
         }
 
         if (userRepository != null) {
@@ -137,6 +133,20 @@ public class UserService {
                 .skip(skip)
                 .limit(finalSize)
                 .toList();
+    }
+
+    public List<UserDTO> getUsersWithAllergies() {
+        return userRepository.findAllWithAllergies().stream()
+            .map(u -> new UserDTO(
+                u.getId(),
+                u.getName(),
+                u.getAge(),
+                u.getAllergies() == null ? List.of() :
+                    u.getAllergies().stream()
+                        .map(a -> new AllergyDTO(a.getId(), a.getName(), a.getSeverity()))
+                        .toList()
+            ))
+            .toList();
     }
 
     public void updateUserName(Long id, String name) {

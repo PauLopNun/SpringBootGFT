@@ -1,10 +1,12 @@
 package com.exampleinyection.clase2parte2.service;
 
 import com.exampleinyection.clase2parte2.config.AppConfig;
+import com.exampleinyection.clase2parte2.dto.UserDTO;
 import com.exampleinyection.clase2parte2.dto.UserRequest;
 import com.exampleinyection.clase2parte2.exception.UserNotFoundException;
 import com.exampleinyection.clase2parte2.model.Allergy;
 import com.exampleinyection.clase2parte2.model.User;
+import com.exampleinyection.clase2parte2.repository.UserRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Answers;
@@ -14,12 +16,10 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
+import java.util.Optional;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertNull;
-import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.mockito.Mockito.when;
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
 class UserServiceTest {
@@ -160,17 +160,15 @@ class UserServiceTest {
         User user1 = new User(1L, "TestUser", 20, List.of(new Allergy(1L, "Dust", 2, null)));
         User user2 = new User(2L, "TestUser2", 30, null);
 
-        // When repository is provided (injected via constructor, let's mock it)
-        com.exampleinyection.clase2parte2.repository.UserRepository repo = org.mockito.Mockito.mock(com.exampleinyection.clase2parte2.repository.UserRepository.class);
+        UserRepository repo = mock(UserRepository.class);
         UserService serviceWithRepo = new UserService(appConfig, repo);
 
-        org.mockito.Mockito.when(repo.findAll()).thenReturn(List.of(user1, user2));
+        when(repo.findAll()).thenReturn(List.of(user1, user2));
 
         List<User> result = serviceWithRepo.getUsers();
 
         assertEquals(2, result.size());
-        // Verify mapping worked without cycles
-        assertNull(result.get(0).getAllergies().get(0).getUser());
+        assertNull(result.get(0).getAllergies().get(0).getUsers());
         assertEquals("Dust", result.get(0).getAllergies().get(0).getName());
         assertEquals(2, result.get(0).getAllergies().get(0).getSeverity());
         assertNull(result.get(1).getAllergies());
@@ -178,13 +176,79 @@ class UserServiceTest {
 
     @Test
     void testGetUsersWithoutRepository() {
-        // As defined in the current mock setup, userRepository is injected but let's test the fallback
         UserService serviceNoRepo = new UserService(appConfig, null);
         serviceNoRepo.saveUser(new UserRequest("NoRepoUser", 25, List.of(new Allergy("Peanuts", 5))));
 
         List<User> result = serviceNoRepo.getUsers();
         assertEquals(1, result.size());
         assertEquals("NoRepoUser", result.get(0).getName());
-        assertNull(result.get(0).getAllergies().get(0).getUser());
+        assertNull(result.get(0).getAllergies().get(0).getUsers());
+    }
+
+    @Test
+    void testGetUsersWithAllergies() {
+        UserRepository repo = mock(UserRepository.class);
+        UserService serviceWithRepo = new UserService(appConfig, repo);
+
+        User user1 = new User(1L, "TestUser", 20, List.of(new Allergy(1L, "Dust", 2, null)));
+        User user2 = new User(2L, "TestUser2", 30, null);
+
+        when(repo.findAllWithAllergies()).thenReturn(List.of(user1, user2));
+
+        List<UserDTO> result = serviceWithRepo.getUsersWithAllergies();
+
+        assertEquals(2, result.size());
+        assertEquals(1, result.get(0).allergies().size());
+        assertEquals("Dust", result.get(0).allergies().get(0).name());
+        assertEquals(2, result.get(0).allergies().get(0).severity());
+        assertEquals(0, result.get(1).allergies().size());
+    }
+
+    @Test
+    void testRepoBranchesCrudMethods() {
+        UserRepository repo = mock(UserRepository.class);
+        UserService svc = new UserService(appConfig, repo);
+
+        User user = new User(1L, "Pepe", 20, null);
+        when(repo.save(any(User.class))).thenReturn(user);
+        when(repo.findById(1L)).thenReturn(Optional.of(user));
+        when(repo.findByNameContainingIgnoreCase("pe")).thenReturn(List.of(user));
+        when(appConfig.getCommon().getPagination().getMaxSize()).thenReturn(10);
+        when(repo.findAll()).thenReturn(List.of(user));
+
+        assertEquals("Pepe", svc.saveUser(new UserRequest("Pepe", 20, null)).getName());
+        assertEquals("Pepe", svc.getUserById(1L).getName());
+        svc.deleteUser(1L);
+        verify(repo).delete(user);
+        assertEquals(1, svc.searchByName("pe").size());
+        assertEquals(1, svc.getPaginatedUsers(1, 10).size());
+        svc.deleteAllUsers();
+        verify(repo).deleteAll();
+    }
+
+    @Test
+    void testRepoBranchUpdateUser() {
+        UserRepository repo = mock(UserRepository.class);
+        UserService svc = new UserService(appConfig, repo);
+
+        User existing = new User(1L, "Pepe", 20, null);
+        when(repo.findById(1L)).thenReturn(Optional.of(existing));
+        when(repo.save(any(User.class))).thenReturn(new User(1L, "Paco", 22, null));
+
+        User result = svc.updateUser(1L, new UserRequest("Paco", 22, null));
+        assertEquals("Paco", result.getName());
+    }
+
+    @Test
+    void testUpdateUserName() {
+        UserRepository repo = mock(UserRepository.class);
+        UserService serviceWithRepo = new UserService(appConfig, repo);
+
+        when(repo.updateNameById(1L, "NewName")).thenReturn(1);
+        serviceWithRepo.updateUserName(1L, "NewName");
+        verify(repo).updateNameById(1L, "NewName");
+
+        when(repo.updateNameById(99L, "X")).thenReturn(0);
+        assertThrows(UserNotFoundException.class, () -> serviceWithRepo.updateUserName(99L, "X"));
     }
 }
