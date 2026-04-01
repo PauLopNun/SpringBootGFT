@@ -3,7 +3,9 @@ package com.exampleinyection.clase2parte2.service;
 import com.exampleinyection.clase2parte2.config.AppConfig;
 import com.exampleinyection.clase2parte2.dto.UserRequest;
 import com.exampleinyection.clase2parte2.exception.UserNotFoundException;
+import com.exampleinyection.clase2parte2.model.Allergy;
 import com.exampleinyection.clase2parte2.model.User;
+import com.exampleinyection.clase2parte2.repository.UserRepository;
 import lombok.Getter;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.http.HttpStatus;
@@ -20,9 +22,11 @@ public class UserService {
     private final List<User> users = new ArrayList<>();
     private long nextId = 1;
     private final AppConfig appConfig;
+    private final UserRepository userRepository;
 
-    public UserService(AppConfig appConfig) {
+    public UserService(AppConfig appConfig, UserRepository userRepository) {
         this.appConfig = appConfig;
+        this.userRepository = userRepository;
     }
 
     public User saveUser(UserRequest request) {
@@ -105,5 +109,28 @@ public class UserService {
 
     public void deleteAllUsers() {
         users.clear();
+    }
+
+    public List<User> getUsers() {
+        List<User> sourceUsers = userRepository != null ? userRepository.findAll() : users;
+        return sourceUsers.stream()
+                .map(this::mapUserWithoutCycles)
+                .toList();
+    }
+
+    private User mapUserWithoutCycles(User user) {
+        List<Allergy> mappedAllergies = user.getAllergies() == null
+                ? null
+                : user.getAllergies().stream().map(this::mapAllergyWithoutUser).toList();
+
+        return new User(user.getId(), user.getName(), user.getAge(), mappedAllergies);
+    }
+
+    private Allergy mapAllergyWithoutUser(Allergy allergy) {
+        Allergy mapped = new Allergy();
+        mapped.setId(allergy.getId());
+        mapped.setName(allergy.getName());
+        mapped.setSeverity(allergy.getSeverity());
+        return mapped;
     }
 }

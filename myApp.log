@@ -1674,3 +1674,552 @@ com.exampleinyection.clase2parte2.exception.UserNotFoundException: No existe el 
 2026-03-30 16:48:54,672 INFO [RMI TCP Connection(5)-10.254.83.123] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:168] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
 2026-03-30 16:48:54,672 INFO [RMI TCP Connection(5)-10.254.83.123] o.s.w.s.DispatcherServlet [FrameworkServlet.java:523] -- Initializing Servlet 'dispatcherServlet'
 2026-03-30 16:48:54,677 INFO [RMI TCP Connection(5)-10.254.83.123] o.s.w.s.DispatcherServlet [FrameworkServlet.java:545] -- Completed initialization in 4 ms
+2026-03-31 09:33:59,021 INFO [SpringApplicationShutdownHook] o.s.b.t.GracefulShutdown [GracefulShutdown.java:54] -- Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-31 09:33:59,033 INFO [tomcat-shutdown] o.s.b.t.GracefulShutdown [GracefulShutdown.java:76] -- Graceful shutdown complete
+2026-04-01 09:48:57,535 INFO [main] c.e.c.c.AppConfigIntegrationTest [StartupInfoLogger.java:54] -- Starting AppConfigIntegrationTest using Java 21.0.10 with PID 19220 (started by pulz in C:\Users\pulz\Desktop\practica-api-s)
+2026-04-01 09:48:57,542 DEBUG [main] c.e.c.c.AppConfigIntegrationTest [StartupInfoLogger.java:55] -- Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-04-01 09:48:57,545 INFO [main] c.e.c.c.AppConfigIntegrationTest [SpringApplication.java:652] -- No active profile set, falling back to 1 default profile: "default"
+2026-04-01 09:49:00,245 INFO [background-preinit] o.h.v.i.u.Version [Version.java:18] -- HV000001: Hibernate Validator 9.0.1.Final
+2026-04-01 09:49:02,866 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] -- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-01 09:49:03,012 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] -- Finished Spring Data repository scanning in 97 ms. Found 0 JPA repository interfaces.
+2026-04-01 09:49:05,941 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:109] -- HikariPool-1 - Starting...
+2026-04-01 09:49:07,295 INFO [main] c.z.h.p.HikariPool [HikariPool.java:580] -- HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:a777362d-b597-4628-949d-77b00fd86071 user=SA
+2026-04-01 09:49:07,319 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:122] -- HikariPool-1 - Start completed.
+2026-04-01 09:49:07,497 INFO [main] o.h.o.jpa [LogHelper.java:102] -- HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-01 09:49:07,853 INFO [main] o.h.o.core [Version.java:41] -- HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-01 09:49:09,391 INFO [main] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:129] -- No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-01 09:49:09,839 INFO [main] o.h.o.c.pooling [JdbcEnvironmentInitiator.java:179] -- HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:a777362d-b597-4628-949d-77b00fd86071]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: A777362D-B597-4628-949D-77B00FD86071/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-01 09:49:11,469 INFO [main] o.h.o.core [JtaPlatformInitiator.java:53] -- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-01 09:49:11,516 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:464] -- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-01 09:49:12,546 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with params []
+2026-04-01 09:49:12,548 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with result com.exampleinyection.clase2parte2.GFTFormacion$$Lambda/0x00000171c2a0a0f8@575e2c6f in 2 ms
+2026-04-01 09:49:12,904 WARN [main] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:247] -- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-01 09:49:16,045 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:60] -- Exposing 1 endpoint beneath base path '/actuator'
+2026-04-01 09:49:16,377 INFO [main] c.e.c.c.AppConfigIntegrationTest [StartupInfoLogger.java:60] -- Started AppConfigIntegrationTest in 22.202 seconds (process running for 49.108)
+2026-04-01 09:49:16,663 INFO [main] c.e.c.GFTFormacion [GFTFormacion.java:26] -- App name: GFTSpringBoot
+2026-04-01 09:49:16,851 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-04-01 09:49:16,852 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@25b2d465 in 1 ms
+2026-04-01 09:49:16,856 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-04-01 09:49:16,858 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@25b2d465 in 2 ms
+2026-04-01 09:49:16,906 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-04-01 09:49:16,911 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@25b2d465 in 8 ms
+2026-04-01 09:49:16,912 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-04-01 09:49:16,913 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@25b2d465 in 1 ms
+2026-04-01 09:49:16,915 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-04-01 09:49:16,916 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@25b2d465 in 1 ms
+2026-04-01 09:49:16,917 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-04-01 09:49:16,918 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@25b2d465 in 1 ms
+2026-04-01 09:49:16,939 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-04-01 09:49:16,939 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$DatabaseSettings@38729b3d in 1 ms
+2026-04-01 09:49:16,974 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-04-01 09:49:16,982 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result Testing Environment Configuration in 8 ms
+2026-04-01 09:49:17,011 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-04-01 09:49:17,013 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$UpdateSettings@1dcc4f9f in 2 ms
+2026-04-01 09:49:17,014 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-04-01 09:49:17,016 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$UpdateSettings@1dcc4f9f in 2 ms
+2026-04-01 09:49:17,033 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-04-01 09:49:17,034 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result Testing Environment Configuration in 1 ms
+2026-04-01 09:49:17,035 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-04-01 09:49:17,041 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result TEST in 6 ms
+2026-04-01 09:49:17,042 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-04-01 09:49:17,043 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result 15 in 1 ms
+2026-04-01 09:49:17,044 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-04-01 09:49:17,045 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$DatabaseSettings@38729b3d in 1 ms
+2026-04-01 09:49:17,046 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-04-01 09:49:17,047 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$DatabaseSettings@38729b3d in 1 ms
+2026-04-01 09:49:17,049 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-04-01 09:49:17,049 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$UpdateSettings@1dcc4f9f in 0 ms
+2026-04-01 09:49:17,052 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-04-01 09:49:17,053 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$UpdateSettings@1dcc4f9f in 1 ms
+2026-04-01 09:49:17,054 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-04-01 09:49:17,059 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@25b2d465 in 5 ms
+2026-04-01 09:49:17,060 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-04-01 09:49:17,062 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@25b2d465 in 2 ms
+2026-04-01 09:49:17,064 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-04-01 09:49:17,064 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@25b2d465 in 0 ms
+2026-04-01 09:49:17,113 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:693] -- Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-01 09:49:17,134 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:349] -- HikariPool-1 - Shutdown initiated...
+2026-04-01 09:49:17,147 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:351] -- HikariPool-1 - Shutdown completed.
+2026-04-01 09:49:17,774 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.controller.ExceptionHandlerTest]: ExceptionHandlerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-04-01 09:49:17,894 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.controller.ExceptionHandlerTest
+2026-04-01 09:49:17,897 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.controller.ExceptionHandlerTest]: ExceptionHandlerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-04-01 09:49:17,915 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.controller.ExceptionHandlerTest
+2026-04-01 09:49:17,924 INFO [main] o.s.b.d.r.RestartApplicationListener [RestartApplicationListener.java:74] -- Restart disabled due to context in which it is running
+2026-04-01 09:49:18,088 INFO [main] c.e.c.c.ExceptionHandlerTest [StartupInfoLogger.java:54] -- Starting ExceptionHandlerTest using Java 21.0.10 with PID 19220 (started by pulz in C:\Users\pulz\Desktop\practica-api-s)
+2026-04-01 09:49:18,089 DEBUG [main] c.e.c.c.ExceptionHandlerTest [StartupInfoLogger.java:55] -- Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-04-01 09:49:18,091 INFO [main] c.e.c.c.ExceptionHandlerTest [SpringApplication.java:658] -- The following 1 profile is active: "local"
+2026-04-01 09:49:19,855 INFO [main] o.s.b.t.m.w.SpringBootMockServletContext [MockServletContext.java:431] -- Initializing Spring TestDispatcherServlet ''
+2026-04-01 09:49:19,858 INFO [main] o.s.t.w.s.TestDispatcherServlet [FrameworkServlet.java:523] -- Initializing Servlet ''
+2026-04-01 09:49:19,872 INFO [main] o.s.t.w.s.TestDispatcherServlet [FrameworkServlet.java:545] -- Completed initialization in 4 ms
+2026-04-01 09:49:20,039 INFO [main] c.e.c.c.ExceptionHandlerTest [StartupInfoLogger.java:60] -- Started ExceptionHandlerTest in 2.116 seconds (process running for 52.771)
+2026-04-01 09:49:20,041 INFO [main] c.e.c.GFTFormacion [GFTFormacion.java:26] -- App name: GFTSpringBoot
+2026-04-01 09:49:31,390 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.controller.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-04-01 09:49:31,423 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.controller.UserControllerTest
+2026-04-01 09:49:31,427 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.controller.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-04-01 09:49:31,453 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.controller.UserControllerTest
+2026-04-01 09:49:35,811 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.GFTFormacionTests]: GFTFormacionTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-04-01 09:49:35,926 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.GFTFormacionTests
+2026-04-01 09:49:36,001 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.GFTFormacionTests]: GFTFormacionTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-04-01 09:49:36,008 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.GFTFormacionTests
+2026-04-01 09:49:36,027 INFO [main] o.s.b.d.r.RestartApplicationListener [RestartApplicationListener.java:74] -- Restart disabled due to context in which it is running
+2026-04-01 09:49:36,508 INFO [main] c.e.c.GFTFormacionTests [StartupInfoLogger.java:54] -- Starting GFTFormacionTests using Java 21.0.10 with PID 19220 (started by pulz in C:\Users\pulz\Desktop\practica-api-s)
+2026-04-01 09:49:36,510 DEBUG [main] c.e.c.GFTFormacionTests [StartupInfoLogger.java:55] -- Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-04-01 09:49:36,514 INFO [main] c.e.c.GFTFormacionTests [SpringApplication.java:658] -- The following 1 profile is active: "local"
+2026-04-01 09:49:38,801 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] -- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-01 09:49:38,869 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] -- Finished Spring Data repository scanning in 49 ms. Found 0 JPA repository interfaces.
+2026-04-01 09:49:39,453 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:109] -- HikariPool-2 - Starting...
+2026-04-01 09:49:39,465 INFO [main] c.z.h.p.HikariPool [HikariPool.java:580] -- HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:68d3b6a5-ab04-414e-9781-af94b62a4d8f user=SA
+2026-04-01 09:49:39,467 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:122] -- HikariPool-2 - Start completed.
+2026-04-01 09:49:39,473 INFO [main] o.h.o.jpa [LogHelper.java:102] -- HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-01 09:49:39,673 INFO [main] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:129] -- No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-01 09:49:39,684 INFO [main] o.h.o.c.pooling [JdbcEnvironmentInitiator.java:179] -- HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:68d3b6a5-ab04-414e-9781-af94b62a4d8f]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: 68D3B6A5-AB04-414E-9781-AF94B62A4D8F/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-01 09:49:39,888 INFO [main] o.h.o.core [JtaPlatformInitiator.java:53] -- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-01 09:49:39,892 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:464] -- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-01 09:49:40,124 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with params []
+2026-04-01 09:49:40,126 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with result com.exampleinyection.clase2parte2.GFTFormacion$$Lambda/0x00000171c2a0a0f8@772506e8 in 2 ms
+2026-04-01 09:49:40,247 WARN [main] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:247] -- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-01 09:49:41,309 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:60] -- Exposing 1 endpoint beneath base path '/actuator'
+2026-04-01 09:49:41,509 INFO [main] c.e.c.GFTFormacionTests [StartupInfoLogger.java:60] -- Started GFTFormacionTests in 5.482 seconds (process running for 74.24)
+2026-04-01 09:49:41,515 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling null with params [[Ljava.lang.String;@3a3f1703]
+2026-04-01 09:49:41,516 INFO [main] c.e.c.GFTFormacion [GFTFormacion.java:26] -- App name: GFTSpringBoot
+2026-04-01 09:49:41,518 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling null with result null in 3 ms
+2026-04-01 09:49:41,565 INFO [main] o.s.b.d.r.RestartApplicationListener [RestartApplicationListener.java:74] -- Restart disabled due to context in which it is running
+2026-04-01 09:49:41,765 INFO [main] c.e.c.GFTFormacion [StartupInfoLogger.java:54] -- Starting GFTFormacion using Java 21.0.10 with PID 19220 (started by pulz in C:\Users\pulz\Desktop\practica-api-s)
+2026-04-01 09:49:41,766 DEBUG [main] c.e.c.GFTFormacion [StartupInfoLogger.java:55] -- Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-04-01 09:49:41,766 INFO [main] c.e.c.GFTFormacion [SpringApplication.java:658] -- The following 1 profile is active: "local"
+2026-04-01 09:49:44,125 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] -- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-01 09:49:44,184 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] -- Finished Spring Data repository scanning in 53 ms. Found 0 JPA repository interfaces.
+2026-04-01 09:49:44,708 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:109] -- HikariPool-3 - Starting...
+2026-04-01 09:49:44,717 INFO [main] c.z.h.p.HikariPool [HikariPool.java:580] -- HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:4594db65-40f7-41a0-a70c-e68af5069a61 user=SA
+2026-04-01 09:49:44,720 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:122] -- HikariPool-3 - Start completed.
+2026-04-01 09:49:44,724 INFO [main] o.h.o.jpa [LogHelper.java:102] -- HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-01 09:49:44,837 INFO [main] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:129] -- No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-01 09:49:44,842 INFO [main] o.h.o.c.pooling [JdbcEnvironmentInitiator.java:179] -- HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:4594db65-40f7-41a0-a70c-e68af5069a61]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: 4594DB65-40F7-41A0-A70C-E68AF5069A61/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-01 09:49:44,935 INFO [main] o.h.o.core [JtaPlatformInitiator.java:53] -- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-01 09:49:44,939 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:464] -- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-01 09:49:45,075 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with params []
+2026-04-01 09:49:45,076 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with result com.exampleinyection.clase2parte2.GFTFormacion$$Lambda/0x00000171c2a0a0f8@7a426119 in 1 ms
+2026-04-01 09:49:45,634 INFO [main] c.e.c.GFTFormacion [StartupInfoLogger.java:60] -- Started GFTFormacion in 4.073 seconds (process running for 78.366)
+2026-04-01 09:49:45,641 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling null with params [[Ljava.lang.String;@554d8d87]
+2026-04-01 09:49:45,643 INFO [main] c.e.c.GFTFormacion [GFTFormacion.java:26] -- App name: GFTSpringBoot
+2026-04-01 09:49:45,645 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling null with result null in 3 ms
+2026-04-01 09:49:45,678 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.integration.FullIntegrationTest]: FullIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-04-01 09:49:45,703 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.integration.FullIntegrationTest
+2026-04-01 09:49:45,706 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:82] -- Could not detect default configuration classes for test class [com.exampleinyection.clase2parte2.integration.FullIntegrationTest]: FullIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-04-01 09:49:45,709 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:211] -- Found @SpringBootConfiguration com.exampleinyection.clase2parte2.GFTFormacion for test class com.exampleinyection.clase2parte2.integration.FullIntegrationTest
+2026-04-01 09:49:45,723 INFO [main] o.s.b.t.m.w.SpringBootMockServletContext [MockServletContext.java:431] -- Initializing Spring TestDispatcherServlet ''
+2026-04-01 09:49:45,724 INFO [main] o.s.t.w.s.TestDispatcherServlet [FrameworkServlet.java:523] -- Initializing Servlet ''
+2026-04-01 09:49:45,730 INFO [main] o.s.t.w.s.TestDispatcherServlet [FrameworkServlet.java:545] -- Completed initialization in 4 ms
+2026-04-01 09:49:46,003 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.controller.UserController with params [UserRequest[name=Paco, age=30, allergies=null]]
+2026-04-01 09:49:46,015 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.service.UserService with params [UserRequest[name=Paco, age=30, allergies=null]]
+2026-04-01 09:49:46,016 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.service.UserService with result User(id=1, name=Paco, age=30, allergies=null) in 2 ms
+2026-04-01 09:49:46,025 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.controller.UserController with result User(id=1, name=Paco, age=30, allergies=null) in 28 ms
+2026-04-01 09:49:46,041 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.controller.UserController with params [1, 10]
+2026-04-01 09:49:46,043 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.service.UserService with params [1, 10]
+2026-04-01 09:49:46,065 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.config.AppConfig with params []
+2026-04-01 09:49:46,067 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.config.AppConfig with result com.exampleinyection.clase2parte2.config.AppConfig$CommonSettings@68df5bbd in 2 ms
+2026-04-01 09:49:46,068 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.service.UserService with result [User(id=1, name=Paco, age=30, allergies=null)] in 25 ms
+2026-04-01 09:49:46,069 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.controller.UserController with result [User(id=1, name=Paco, age=30, allergies=null)] in 28 ms
+2026-04-01 09:49:47,202 INFO [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:693] -- Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-01 09:49:47,206 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:349] -- HikariPool-2 - Shutdown initiated...
+2026-04-01 09:49:47,212 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:351] -- HikariPool-2 - Shutdown completed.
+2026-04-01 09:49:47,216 INFO [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:693] -- Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-01 09:49:47,219 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:349] -- HikariPool-3 - Shutdown initiated...
+2026-04-01 09:49:47,223 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:351] -- HikariPool-3 - Shutdown completed.
+2026-04-01 09:56:24,414 INFO [main] c.e.c.GFTFormacionTests [StartupInfoLogger.java:54] -- Starting GFTFormacionTests using Java 21.0.10 with PID 5800 (started by pulz in C:\Users\pulz\Desktop\practica-api-s)
+2026-04-01 09:56:24,427 DEBUG [main] c.e.c.GFTFormacionTests [StartupInfoLogger.java:55] -- Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-04-01 09:56:24,430 INFO [main] c.e.c.GFTFormacionTests [SpringApplication.java:658] -- The following 1 profile is active: "local"
+2026-04-01 09:56:28,227 INFO [background-preinit] o.h.v.i.u.Version [Version.java:18] -- HV000001: Hibernate Validator 9.0.1.Final
+2026-04-01 09:56:28,833 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] -- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-01 09:56:28,989 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] -- Finished Spring Data repository scanning in 109 ms. Found 0 JPA repository interfaces.
+2026-04-01 09:56:32,432 INFO [main] o.h.o.jpa [LogHelper.java:102] -- HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-01 09:56:32,859 INFO [main] o.h.o.core [Version.java:41] -- HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-01 09:56:35,927 INFO [main] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:129] -- No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-01 09:56:36,164 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:109] -- HikariPool-1 - Starting...
+2026-04-01 09:56:37,695 INFO [main] c.z.h.p.HikariPool [HikariPool.java:580] -- HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-04-01 09:56:37,703 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:122] -- HikariPool-1 - Start completed.
+2026-04-01 09:56:38,028 INFO [main] o.h.o.c.pooling [JdbcEnvironmentInitiator.java:179] -- HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-01 09:56:41,530 INFO [main] o.h.o.core [JtaPlatformInitiator.java:53] -- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-01 09:56:41,571 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:464] -- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-01 09:56:43,041 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:29] -- before calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with params []
+2026-04-01 09:56:43,045 DEBUG [main] c.e.c.a.LoggingAspect [LoggingAspect.java:34] -- after calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with result com.exampleinyection.clase2parte2.GFTFormacion$$Lambda/0x000002030193d900@4a6e6db0 in 4 ms
+2026-04-01 09:56:43,421 WARN [main] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:247] -- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-01 09:56:47,864 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:60] -- Exposing 1 endpoint beneath base path '/actuator'
+2026-04-01 09:56:48,094 INFO [main] c.e.c.GFTFormacionTests [StartupInfoLogger.java:60] -- Started GFTFormacionTests in 26.43 seconds (process running for 35.328)
+2026-04-01 09:56:48,107 INFO [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:693] -- Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-01 09:56:48,113 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:349] -- HikariPool-1 - Shutdown initiated...
+2026-04-01 09:56:48,124 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:351] -- HikariPool-1 - Shutdown completed.
+2026-04-01 09:57:25,078 INFO [restartedMain] c.e.c.GFTFormacion [StartupInfoLogger.java:54] -- Starting GFTFormacion using Java 25.0.2 with PID 6912 (C:\Users\pulz\Desktop\practica-api-s\target\classes started by pulz in C:\Users\pulz\Desktop\practica-api-s)
+2026-04-01 09:57:25,088 DEBUG [restartedMain] c.e.c.GFTFormacion [StartupInfoLogger.java:55] -- Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-04-01 09:57:25,090 INFO [restartedMain] c.e.c.GFTFormacion [SpringApplication.java:658] -- The following 1 profile is active: "local"
+2026-04-01 09:57:25,292 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [LogLevel.java:69] -- Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-01 09:57:25,295 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [LogLevel.java:69] -- For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-01 09:57:25,713 INFO [background-preinit] o.h.v.i.u.Version [Version.java:18] -- HV000001: Hibernate Validator 9.0.1.Final
+2026-04-01 09:57:28,261 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] -- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-01 09:57:28,314 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] -- Finished Spring Data repository scanning in 29 ms. Found 0 JPA repository interfaces.
+2026-04-01 09:57:29,532 INFO [restartedMain] o.s.b.t.TomcatWebServer [TomcatWebServer.java:114] -- Tomcat initialized with port 8080 (http)
+2026-04-01 09:57:29,557 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:168] -- Initializing ProtocolHandler ["http-nio-8080"]
+2026-04-01 09:57:29,561 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:168] -- Starting service [Tomcat]
+2026-04-01 09:57:29,561 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:168] -- Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-04-01 09:57:29,648 INFO [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer [WebApplicationContextInitializer.java:77] -- Root WebApplicationContext: initialization completed in 4351 ms
+2026-04-01 09:57:30,172 INFO [restartedMain] o.h.o.jpa [LogHelper.java:102] -- HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-01 09:57:30,247 INFO [restartedMain] o.h.o.core [Version.java:41] -- HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-01 09:57:31,094 INFO [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:129] -- No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-01 09:57:31,140 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:109] -- HikariPool-1 - Starting...
+2026-04-01 09:57:31,410 INFO [restartedMain] c.z.h.p.HikariPool [HikariPool.java:580] -- HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-04-01 09:57:31,412 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:122] -- HikariPool-1 - Start completed.
+2026-04-01 09:57:31,503 INFO [restartedMain] o.h.o.c.pooling [JdbcEnvironmentInitiator.java:179] -- HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-01 09:57:32,493 INFO [restartedMain] o.h.o.core [JtaPlatformInitiator.java:53] -- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-01 09:57:32,512 INFO [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:464] -- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-01 09:57:33,279 DEBUG [restartedMain] c.e.c.a.LoggingAspect [LoggingAspect.java:28] -- before calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with params []
+2026-04-01 09:57:33,281 DEBUG [restartedMain] c.e.c.a.LoggingAspect [LoggingAspect.java:33] -- after calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with result com.exampleinyection.clase2parte2.GFTFormacion$$Lambda/0x000000008c957c18@303be776 in 2 ms
+2026-04-01 09:57:33,467 WARN [restartedMain] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:247] -- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-01 09:57:35,179 INFO [restartedMain] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:60] -- Exposing 1 endpoint beneath base path '/actuator'
+2026-04-01 09:57:35,411 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:168] -- Starting ProtocolHandler ["http-nio-8080"]
+2026-04-01 09:57:35,476 INFO [restartedMain] o.s.b.t.TomcatWebServer [TomcatWebServer.java:240] -- Tomcat started on port 8080 (http) with context path '/'
+2026-04-01 09:57:35,507 INFO [restartedMain] c.e.c.GFTFormacion [StartupInfoLogger.java:60] -- Started GFTFormacion in 11.98 seconds (process running for 15.741)
+2026-04-01 09:57:35,558 INFO [restartedMain] c.e.c.GFTFormacion [GFTFormacion.java:26] -- App name: demo
+2026-04-01 09:57:36,716 INFO [RMI TCP Connection(3)-10.254.83.123] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:168] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-01 09:57:36,717 INFO [RMI TCP Connection(3)-10.254.83.123] o.s.w.s.DispatcherServlet [FrameworkServlet.java:523] -- Initializing Servlet 'dispatcherServlet'
+2026-04-01 09:57:36,721 INFO [RMI TCP Connection(3)-10.254.83.123] o.s.w.s.DispatcherServlet [FrameworkServlet.java:545] -- Completed initialization in 4 ms
+2026-04-01 09:57:36,978 INFO [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [LocalDevToolsAutoConfiguration.java:214] -- Restarting due to 7 class path changes (7 additions, 0 deletions, 0 modifications)
+2026-04-01 09:57:37,034 INFO [Thread-1] o.s.b.t.GracefulShutdown [GracefulShutdown.java:54] -- Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-01 09:57:37,048 INFO [tomcat-shutdown] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:168] -- Pausing ProtocolHandler ["http-nio-8080"]
+2026-04-01 09:57:37,068 INFO [tomcat-shutdown] o.s.b.t.GracefulShutdown [GracefulShutdown.java:76] -- Graceful shutdown complete
+2026-04-01 09:57:37,070 INFO [Thread-1] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:168] -- Stopping ProtocolHandler ["http-nio-8080"]
+2026-04-01 09:57:37,086 INFO [Thread-1] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:693] -- Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-01 09:57:37,102 WARN [Thread-1] o.s.b.f.s.DisposableBeanAdapter [DisposableBeanAdapter.java:219] -- Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-240]
+2026-04-01 09:57:37,104 INFO [Thread-1] c.z.h.HikariDataSource [HikariDataSource.java:349] -- HikariPool-1 - Shutdown initiated...
+2026-04-01 09:57:37,108 INFO [Thread-1] c.z.h.HikariDataSource [HikariDataSource.java:351] -- HikariPool-1 - Shutdown completed.
+2026-04-01 09:57:37,722 INFO [restartedMain] c.e.c.GFTFormacion [StartupInfoLogger.java:54] -- Starting GFTFormacion using Java 25.0.2 with PID 6912 (C:\Users\pulz\Desktop\practica-api-s\target\classes started by pulz in C:\Users\pulz\Desktop\practica-api-s)
+2026-04-01 09:57:37,723 DEBUG [restartedMain] c.e.c.GFTFormacion [StartupInfoLogger.java:55] -- Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-04-01 09:57:37,723 INFO [restartedMain] c.e.c.GFTFormacion [SpringApplication.java:658] -- The following 1 profile is active: "local"
+2026-04-01 09:57:38,379 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] -- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-01 09:57:38,382 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] -- Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2026-04-01 09:57:38,818 INFO [restartedMain] o.s.b.t.TomcatWebServer [TomcatWebServer.java:114] -- Tomcat initialized with port 8080 (http)
+2026-04-01 09:57:38,820 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:168] -- Initializing ProtocolHandler ["http-nio-8080"]
+2026-04-01 09:57:38,821 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:168] -- Starting service [Tomcat]
+2026-04-01 09:57:38,821 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:168] -- Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-04-01 09:57:38,888 INFO [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer [WebApplicationContextInitializer.java:77] -- Root WebApplicationContext: initialization completed in 1159 ms
+2026-04-01 09:57:39,099 INFO [restartedMain] o.h.o.jpa [LogHelper.java:102] -- HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-01 09:57:39,249 INFO [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:129] -- No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-01 09:57:39,253 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:109] -- HikariPool-2 - Starting...
+2026-04-01 09:57:39,258 INFO [restartedMain] c.z.h.p.HikariPool [HikariPool.java:580] -- HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:testdb user=SA
+2026-04-01 09:57:39,258 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:122] -- HikariPool-2 - Start completed.
+2026-04-01 09:57:39,260 INFO [restartedMain] o.h.o.c.pooling [JdbcEnvironmentInitiator.java:179] -- HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-01 09:57:39,329 INFO [restartedMain] o.h.o.core [JtaPlatformInitiator.java:53] -- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-01 09:57:39,336 INFO [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:464] -- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-01 09:57:39,451 WARN [restartedMain] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:247] -- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-01 09:57:39,952 INFO [restartedMain] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:60] -- Exposing 1 endpoint beneath base path '/actuator'
+2026-04-01 09:57:40,013 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:168] -- Starting ProtocolHandler ["http-nio-8080"]
+2026-04-01 09:57:40,026 INFO [restartedMain] o.s.b.t.TomcatWebServer [TomcatWebServer.java:240] -- Tomcat started on port 8080 (http) with context path '/'
+2026-04-01 09:57:40,037 INFO [restartedMain] c.e.c.GFTFormacion [StartupInfoLogger.java:60] -- Started GFTFormacion in 2.439 seconds (process running for 20.273)
+2026-04-01 09:57:40,041 INFO [restartedMain] c.e.c.GFTFormacion [GFTFormacion.java:26] -- App name: demo
+2026-04-01 09:57:40,044 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:66] -- Condition evaluation unchanged
+2026-04-01 09:57:46,386 INFO [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [LocalDevToolsAutoConfiguration.java:214] -- Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-04-01 09:57:46,400 INFO [Thread-5] o.s.b.t.GracefulShutdown [GracefulShutdown.java:54] -- Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-01 09:57:46,402 INFO [tomcat-shutdown] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:168] -- Pausing ProtocolHandler ["http-nio-8080"]
+2026-04-01 09:57:46,418 INFO [tomcat-shutdown] o.s.b.t.GracefulShutdown [GracefulShutdown.java:76] -- Graceful shutdown complete
+2026-04-01 09:57:46,419 INFO [Thread-5] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:168] -- Stopping ProtocolHandler ["http-nio-8080"]
+2026-04-01 09:57:46,425 INFO [Thread-5] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:693] -- Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-01 09:57:46,427 WARN [Thread-5] o.s.b.f.s.DisposableBeanAdapter [DisposableBeanAdapter.java:219] -- Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-240]
+2026-04-01 09:57:46,431 INFO [Thread-5] c.z.h.HikariDataSource [HikariDataSource.java:349] -- HikariPool-2 - Shutdown initiated...
+2026-04-01 09:57:46,432 INFO [Thread-5] c.z.h.HikariDataSource [HikariDataSource.java:351] -- HikariPool-2 - Shutdown completed.
+2026-04-01 09:57:46,679 INFO [restartedMain] c.e.c.GFTFormacion [StartupInfoLogger.java:54] -- Starting GFTFormacion using Java 25.0.2 with PID 6912 (C:\Users\pulz\Desktop\practica-api-s\target\classes started by pulz in C:\Users\pulz\Desktop\practica-api-s)
+2026-04-01 09:57:46,681 DEBUG [restartedMain] c.e.c.GFTFormacion [StartupInfoLogger.java:55] -- Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-04-01 09:57:46,682 INFO [restartedMain] c.e.c.GFTFormacion [SpringApplication.java:658] -- The following 1 profile is active: "local"
+2026-04-01 09:57:47,469 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] -- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-01 09:57:47,477 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] -- Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2026-04-01 09:57:48,033 INFO [restartedMain] o.s.b.t.TomcatWebServer [TomcatWebServer.java:114] -- Tomcat initialized with port 8080 (http)
+2026-04-01 09:57:48,034 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:168] -- Initializing ProtocolHandler ["http-nio-8080"]
+2026-04-01 09:57:48,037 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:168] -- Starting service [Tomcat]
+2026-04-01 09:57:48,038 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:168] -- Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-04-01 09:57:48,148 INFO [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer [WebApplicationContextInitializer.java:77] -- Root WebApplicationContext: initialization completed in 1457 ms
+2026-04-01 09:57:48,934 INFO [restartedMain] o.h.o.jpa [LogHelper.java:102] -- HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-01 09:57:49,149 INFO [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:129] -- No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-01 09:57:49,152 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:109] -- HikariPool-3 - Starting...
+2026-04-01 09:57:49,160 INFO [restartedMain] c.z.h.p.HikariPool [HikariPool.java:580] -- HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:testdb user=SA
+2026-04-01 09:57:49,161 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:122] -- HikariPool-3 - Start completed.
+2026-04-01 09:57:49,163 INFO [restartedMain] o.h.o.c.pooling [JdbcEnvironmentInitiator.java:179] -- HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-01 09:57:49,260 INFO [restartedMain] o.h.o.core [JtaPlatformInitiator.java:53] -- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-01 09:57:49,266 INFO [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:464] -- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-01 09:57:49,401 WARN [restartedMain] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:247] -- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-01 09:57:50,145 INFO [restartedMain] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:60] -- Exposing 1 endpoint beneath base path '/actuator'
+2026-04-01 09:57:50,256 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:168] -- Starting ProtocolHandler ["http-nio-8080"]
+2026-04-01 09:57:50,272 INFO [restartedMain] o.s.b.t.TomcatWebServer [TomcatWebServer.java:240] -- Tomcat started on port 8080 (http) with context path '/'
+2026-04-01 09:57:50,284 INFO [restartedMain] c.e.c.GFTFormacion [StartupInfoLogger.java:60] -- Started GFTFormacion in 3.746 seconds (process running for 30.518)
+2026-04-01 09:57:50,286 INFO [restartedMain] c.e.c.GFTFormacion [GFTFormacion.java:26] -- App name: demo
+2026-04-01 09:57:50,288 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:66] -- Condition evaluation unchanged
+2026-04-01 09:57:51,542 INFO [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [LocalDevToolsAutoConfiguration.java:214] -- Restarting due to 18 class path changes (18 additions, 0 deletions, 0 modifications)
+2026-04-01 09:57:51,545 INFO [Thread-10] o.s.b.t.GracefulShutdown [GracefulShutdown.java:54] -- Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-01 09:57:51,547 INFO [tomcat-shutdown] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:168] -- Pausing ProtocolHandler ["http-nio-8080"]
+2026-04-01 09:57:51,560 INFO [tomcat-shutdown] o.s.b.t.GracefulShutdown [GracefulShutdown.java:76] -- Graceful shutdown complete
+2026-04-01 09:57:51,561 INFO [Thread-10] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:168] -- Stopping ProtocolHandler ["http-nio-8080"]
+2026-04-01 09:57:51,567 INFO [Thread-10] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:693] -- Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-01 09:57:51,570 WARN [Thread-10] o.s.b.f.s.DisposableBeanAdapter [DisposableBeanAdapter.java:219] -- Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-240]
+2026-04-01 09:57:51,571 INFO [Thread-10] c.z.h.HikariDataSource [HikariDataSource.java:349] -- HikariPool-3 - Shutdown initiated...
+2026-04-01 09:57:51,574 INFO [Thread-10] c.z.h.HikariDataSource [HikariDataSource.java:351] -- HikariPool-3 - Shutdown completed.
+2026-04-01 09:57:51,848 INFO [restartedMain] c.e.c.GFTFormacion [StartupInfoLogger.java:54] -- Starting GFTFormacion using Java 25.0.2 with PID 6912 (C:\Users\pulz\Desktop\practica-api-s\target\classes started by pulz in C:\Users\pulz\Desktop\practica-api-s)
+2026-04-01 09:57:51,850 DEBUG [restartedMain] c.e.c.GFTFormacion [StartupInfoLogger.java:55] -- Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-04-01 09:57:51,851 INFO [restartedMain] c.e.c.GFTFormacion [SpringApplication.java:658] -- The following 1 profile is active: "local"
+2026-04-01 09:57:53,104 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] -- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-01 09:57:53,128 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] -- Finished Spring Data repository scanning in 17 ms. Found 0 JPA repository interfaces.
+2026-04-01 09:57:53,571 INFO [restartedMain] o.s.b.t.TomcatWebServer [TomcatWebServer.java:114] -- Tomcat initialized with port 8080 (http)
+2026-04-01 09:57:53,573 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:168] -- Initializing ProtocolHandler ["http-nio-8080"]
+2026-04-01 09:57:53,574 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:168] -- Starting service [Tomcat]
+2026-04-01 09:57:53,575 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:168] -- Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-04-01 09:57:53,668 INFO [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer [WebApplicationContextInitializer.java:77] -- Root WebApplicationContext: initialization completed in 1810 ms
+2026-04-01 09:57:53,889 INFO [restartedMain] o.h.o.jpa [LogHelper.java:102] -- HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-01 09:57:53,985 INFO [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:129] -- No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-01 09:57:53,988 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:109] -- HikariPool-4 - Starting...
+2026-04-01 09:57:53,992 INFO [restartedMain] c.z.h.p.HikariPool [HikariPool.java:580] -- HikariPool-4 - Added connection conn30: url=jdbc:h2:mem:testdb user=SA
+2026-04-01 09:57:53,992 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:122] -- HikariPool-4 - Start completed.
+2026-04-01 09:57:53,994 INFO [restartedMain] o.h.o.c.pooling [JdbcEnvironmentInitiator.java:179] -- HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-01 09:57:54,049 INFO [restartedMain] o.h.o.core [JtaPlatformInitiator.java:53] -- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-01 09:57:54,051 INFO [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:464] -- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-01 09:57:54,255 DEBUG [restartedMain] c.e.c.a.LoggingAspect [LoggingAspect.java:28] -- before calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with params []
+2026-04-01 09:57:54,258 DEBUG [restartedMain] c.e.c.a.LoggingAspect [LoggingAspect.java:33] -- after calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with result com.exampleinyection.clase2parte2.GFTFormacion$$Lambda/0x000000008ca91c18@50adb605 in 2 ms
+2026-04-01 09:57:54,324 WARN [restartedMain] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:247] -- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-01 09:57:54,868 INFO [restartedMain] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:60] -- Exposing 1 endpoint beneath base path '/actuator'
+2026-04-01 09:57:54,921 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:168] -- Starting ProtocolHandler ["http-nio-8080"]
+2026-04-01 09:57:54,928 INFO [restartedMain] o.s.b.t.TomcatWebServer [TomcatWebServer.java:240] -- Tomcat started on port 8080 (http) with context path '/'
+2026-04-01 09:57:54,936 INFO [restartedMain] c.e.c.GFTFormacion [StartupInfoLogger.java:60] -- Started GFTFormacion in 3.244 seconds (process running for 35.17)
+2026-04-01 09:57:54,939 INFO [restartedMain] c.e.c.GFTFormacion [GFTFormacion.java:26] -- App name: demo
+2026-04-01 09:57:54,941 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:66] -- Condition evaluation unchanged
+2026-04-01 10:00:32,052 INFO [SpringApplicationShutdownHook] o.s.b.t.GracefulShutdown [GracefulShutdown.java:54] -- Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-01 10:00:32,061 INFO [tomcat-shutdown] o.s.b.t.GracefulShutdown [GracefulShutdown.java:76] -- Graceful shutdown complete
+2026-04-01 10:00:32,066 INFO [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:693] -- Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-01 10:00:32,067 WARN [SpringApplicationShutdownHook] o.s.b.f.s.DisposableBeanAdapter [DisposableBeanAdapter.java:219] -- Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-240]
+2026-04-01 10:00:32,069 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:349] -- HikariPool-4 - Shutdown initiated...
+2026-04-01 10:00:32,070 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:351] -- HikariPool-4 - Shutdown completed.
+2026-04-01 10:01:22,548 INFO [restartedMain] c.e.c.GFTFormacion [StartupInfoLogger.java:54] -- Starting GFTFormacion using Java 25.0.2 with PID 11304 (C:\Users\pulz\Desktop\practica-api-s\target\classes started by pulz in C:\Users\pulz\Desktop\practica-api-s)
+2026-04-01 10:01:22,558 DEBUG [restartedMain] c.e.c.GFTFormacion [StartupInfoLogger.java:55] -- Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-04-01 10:01:22,560 INFO [restartedMain] c.e.c.GFTFormacion [SpringApplication.java:658] -- The following 1 profile is active: "local"
+2026-04-01 10:01:22,734 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [LogLevel.java:69] -- Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-01 10:01:22,736 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [LogLevel.java:69] -- For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-01 10:01:23,137 INFO [background-preinit] o.h.v.i.u.Version [Version.java:18] -- HV000001: Hibernate Validator 9.0.1.Final
+2026-04-01 10:01:25,186 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] -- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-01 10:01:25,257 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] -- Finished Spring Data repository scanning in 44 ms. Found 0 JPA repository interfaces.
+2026-04-01 10:01:27,535 INFO [restartedMain] o.s.b.t.TomcatWebServer [TomcatWebServer.java:114] -- Tomcat initialized with port 8080 (http)
+2026-04-01 10:01:27,571 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:168] -- Initializing ProtocolHandler ["http-nio-8080"]
+2026-04-01 10:01:27,578 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:168] -- Starting service [Tomcat]
+2026-04-01 10:01:27,579 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:168] -- Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-04-01 10:01:27,737 INFO [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer [WebApplicationContextInitializer.java:77] -- Root WebApplicationContext: initialization completed in 4998 ms
+2026-04-01 10:01:28,556 INFO [restartedMain] o.h.o.jpa [LogHelper.java:102] -- HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-01 10:01:28,736 INFO [restartedMain] o.h.o.core [Version.java:41] -- HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-01 10:01:30,320 INFO [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:129] -- No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-01 10:01:30,407 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:109] -- HikariPool-1 - Starting...
+2026-04-01 10:01:30,865 INFO [restartedMain] c.z.h.p.HikariPool [HikariPool.java:580] -- HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-04-01 10:01:30,868 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:122] -- HikariPool-1 - Start completed.
+2026-04-01 10:01:31,005 INFO [restartedMain] o.h.o.c.pooling [JdbcEnvironmentInitiator.java:179] -- HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-01 10:01:32,008 INFO [restartedMain] o.h.o.core [JtaPlatformInitiator.java:53] -- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-01 10:01:32,032 INFO [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:464] -- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-01 10:01:32,506 DEBUG [restartedMain] c.e.c.a.LoggingAspect [LoggingAspect.java:28] -- before calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with params []
+2026-04-01 10:01:32,509 DEBUG [restartedMain] c.e.c.a.LoggingAspect [LoggingAspect.java:33] -- after calling com.exampleinyection.clase2parte2.GFTFormacion$$SpringCGLIB$$0 with result com.exampleinyection.clase2parte2.GFTFormacion$$Lambda/0x000000000595dc18@25ed209f in 3 ms
+2026-04-01 10:01:32,633 WARN [restartedMain] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:247] -- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-01 10:01:34,053 INFO [restartedMain] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:60] -- Exposing 1 endpoint beneath base path '/actuator'
+2026-04-01 10:01:34,196 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:168] -- Starting ProtocolHandler ["http-nio-8080"]
+2026-04-01 10:01:34,238 INFO [restartedMain] o.s.b.t.TomcatWebServer [TomcatWebServer.java:240] -- Tomcat started on port 8080 (http) with context path '/'
+2026-04-01 10:01:34,256 INFO [restartedMain] c.e.c.GFTFormacion [StartupInfoLogger.java:60] -- Started GFTFormacion in 14.032 seconds (process running for 18.808)
+2026-04-01 10:01:34,299 INFO [restartedMain] c.e.c.GFTFormacion [GFTFormacion.java:26] -- App name: demo
+2026-04-01 10:01:34,829 INFO [RMI TCP Connection(2)-10.254.83.123] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:168] -- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-01 10:01:34,830 INFO [RMI TCP Connection(2)-10.254.83.123] o.s.w.s.DispatcherServlet [FrameworkServlet.java:523] -- Initializing Servlet 'dispatcherServlet'
+2026-04-01 10:01:34,836 INFO [RMI TCP Connection(2)-10.254.83.123] o.s.w.s.DispatcherServlet [FrameworkServlet.java:545] -- Completed initialization in 6 ms
+2026-04-01 10:07:08,510 INFO [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [LocalDevToolsAutoConfiguration.java:214] -- Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2026-04-01 10:07:08,521 INFO [Thread-1] o.s.b.t.GracefulShutdown [GracefulShutdown.java:54] -- Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-01 10:07:08,524 INFO [tomcat-shutdown] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:168] -- Pausing ProtocolHandler ["http-nio-8080"]
+2026-04-01 10:07:08,539 INFO [tomcat-shutdown] o.s.b.t.GracefulShutdown [GracefulShutdown.java:76] -- Graceful shutdown complete
+2026-04-01 10:07:08,541 INFO [Thread-1] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:168] -- Stopping ProtocolHandler ["http-nio-8080"]
+2026-04-01 10:07:08,559 INFO [Thread-1] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:693] -- Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-01 10:07:08,575 WARN [Thread-1] o.s.b.f.s.DisposableBeanAdapter [DisposableBeanAdapter.java:219] -- Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-240]
+2026-04-01 10:07:08,578 INFO [Thread-1] c.z.h.HikariDataSource [HikariDataSource.java:349] -- HikariPool-1 - Shutdown initiated...
+2026-04-01 10:07:08,583 INFO [Thread-1] c.z.h.HikariDataSource [HikariDataSource.java:351] -- HikariPool-1 - Shutdown completed.
+2026-04-01 10:07:08,990 INFO [restartedMain] c.e.c.GFTFormacion [StartupInfoLogger.java:54] -- Starting GFTFormacion using Java 25.0.2 with PID 11304 (C:\Users\pulz\Desktop\practica-api-s\target\classes started by pulz in C:\Users\pulz\Desktop\practica-api-s)
+2026-04-01 10:07:08,991 DEBUG [restartedMain] c.e.c.GFTFormacion [StartupInfoLogger.java:55] -- Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-04-01 10:07:08,991 INFO [restartedMain] c.e.c.GFTFormacion [SpringApplication.java:658] -- The following 1 profile is active: "local"
+2026-04-01 10:07:09,901 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] -- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-01 10:07:09,918 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] -- Finished Spring Data repository scanning in 11 ms. Found 0 JPA repository interfaces.
+2026-04-01 10:07:10,394 INFO [restartedMain] o.s.b.t.TomcatWebServer [TomcatWebServer.java:114] -- Tomcat initialized with port 8080 (http)
+2026-04-01 10:07:10,397 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:168] -- Initializing ProtocolHandler ["http-nio-8080"]
+2026-04-01 10:07:10,398 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:168] -- Starting service [Tomcat]
+2026-04-01 10:07:10,399 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:168] -- Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-04-01 10:07:10,473 INFO [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer [WebApplicationContextInitializer.java:77] -- Root WebApplicationContext: initialization completed in 1474 ms
+2026-04-01 10:07:10,743 INFO [restartedMain] o.h.o.jpa [LogHelper.java:102] -- HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-01 10:07:10,837 INFO [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:129] -- No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-01 10:07:10,840 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:109] -- HikariPool-2 - Starting...
+2026-04-01 10:07:10,844 INFO [restartedMain] c.z.h.p.HikariPool [HikariPool.java:580] -- HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:testdb user=SA
+2026-04-01 10:07:10,845 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:122] -- HikariPool-2 - Start completed.
+2026-04-01 10:07:10,847 INFO [restartedMain] o.h.o.c.pooling [JdbcEnvironmentInitiator.java:179] -- HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-01 10:07:10,903 INFO [restartedMain] o.h.o.core [JtaPlatformInitiator.java:53] -- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-01 10:07:10,906 INFO [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:464] -- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-01 10:07:11,162 WARN [restartedMain] o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:629] -- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Lookup method resolution failed
+2026-04-01 10:07:11,164 INFO [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:693] -- Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-01 10:07:11,177 WARN [restartedMain] o.s.b.f.s.DisposableBeanAdapter [DisposableBeanAdapter.java:219] -- Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-240]
+2026-04-01 10:07:11,179 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:349] -- HikariPool-2 - Shutdown initiated...
+2026-04-01 10:07:11,231 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:351] -- HikariPool-2 - Shutdown completed.
+2026-04-01 10:07:11,233 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:168] -- Stopping service [Tomcat]
+2026-04-01 10:07:11,246 INFO [restartedMain] o.s.b.a.l.ConditionEvaluationReportLogger [ConditionEvaluationReportLogger.java:82] -- 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-04-01 10:07:11,318 ERROR [restartedMain] o.s.b.SpringApplication [SpringApplication.java:863] -- Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:482)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1218)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1218)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1184)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1121)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:994)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.exampleinyection.clase2parte2.GFTFormacion.main(GFTFormacion.java:20)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.exampleinyection.clase2parte2.controller.UserController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@677489ed]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:460)
+	... 24 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/exampleinyection/clase2parte2/model/User
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3010)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2329)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.exampleinyection.clase2parte2.model.User
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:547)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:123)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
+	... 30 common frames omitted

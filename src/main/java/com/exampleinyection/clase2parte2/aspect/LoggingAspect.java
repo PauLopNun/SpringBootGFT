@@ -18,7 +18,6 @@ public class LoggingAspect {
 
     @Pointcut("within(com.exampleinyection.clase2parte2..*)")
     public void applicationPackagePointcut() {
-        // Pointcut for all methods in application packages.
     }
 
     @Around("applicationPackagePointcut()")

@@ -48,6 +48,12 @@ jobs:
             exit 1
           fi
 
+          if [ "$ORG" = "$KEY" ]; then
+            echo "Configuracion invalida: SONAR_PROJECT_KEY coincide con SONAR_ORGANIZATION ($ORG)." >&2
+            echo "Usa la project key real de SonarCloud (por ejemplo owner_repo) en SONAR_PROJECT_KEY." >&2
+            exit 1
+          fi
+
           echo "organization=$ORG" >> "$GITHUB_OUTPUT"
           echo "project_key=$KEY" >> "$GITHUB_OUTPUT"
 
