@@ -1,561 +1,338 @@
-﻿# GFT Formación - API REST de Gestión de Usuarios
+# GFT Formación — API REST de Gestión de Usuarios
 
-Una aplicación Spring Boot que demuestra buenas prácticas de desarrollo con Clean Code, inyección de dependencias, validación y manejo de configuraciones por perfiles.
+![Java](https://img.shields.io/badge/Java-21-orange?logo=openjdk)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-4.0.4-brightgreen?logo=springboot)
+![Maven](https://img.shields.io/badge/Maven-3.9.14-blue?logo=apachemaven)
+![JUnit 5](https://img.shields.io/badge/Tests-JUnit%205%20%2B%20Mockito-green?logo=junit5)
+![JaCoCo](https://img.shields.io/badge/Cobertura-100%25-success)
+![License](https://img.shields.io/badge/Licencia-Educativa-lightgrey)
 
-## Descripción General
+API REST completa desarrollada con Spring Boot como parte del **GFT Junior Training Programme** (back-end track). Demuestra buenas prácticas de desarrollo empresarial: Clean Code, SOLID, JPA con relaciones ManyToMany, DTOs, AOP, perfiles de configuración, cobertura de tests al 100% y CI/CD.
 
-Este proyecto es una API REST completa para la gestión de usuarios con soporte para:
-- Múltiples perfiles de configuración (local, dev, prod)
+---
+
+## Características
+
+- CRUD completo de usuarios con paginación y búsqueda por nombre
+- Relación **ManyToMany** entre `User` y `Allergy` persistida en H2 vía JPA
+- DTOs de respuesta (`UserDTO`, `AllergyDTO`) para evitar ciclos de serialización
+- Query personalizada con `@Query` + `@Modifying` + `@Transactional` para `PATCH` de nombre
+- `DataInitializer` que precarga 30 usuarios y 5 alergías al arrancar
+- Múltiples perfiles de configuración (`local`, `dev`, `prod`)
 - Validación de datos con Jakarta Bean Validation
-- Gestión de propiedades sensibles mediante variables de entorno
-- Manejo centralizado de excepciones
-- Cobertura de tests con JUnit 5 y Mockito
-- Principios de Clean Code en toda la codebase
+- Manejo centralizado de excepciones con `@RestControllerAdvice` y `ErrorResponse`
+- Trazas de entrada/salida de métodos mediante AOP (`LoggingAspect`)
+- Propiedades sensibles gestionadas con variables de entorno
+- Cobertura de tests del **100%** (JUnit 5 + Mockito + JaCoCo)
+- Tests unitarios, de integración completa (`FullIntegrationTest`) y de aspecto AOP
+- CI con GitHub Actions (`ci.yml` + `sonarcloud.yml`)
+
+---
+
+## Tech Stack
+
+| Tecnología | Uso |
+|---|---|
+| Java 21 | Lenguaje principal |
+| Spring Boot 4.0.4 | Framework base |
+| Spring Data JPA | Persistencia y repositorios |
+| H2 Database | Base de datos en memoria |
+| Jakarta Bean Validation | Validación de entrada |
+| Spring AOP / AspectJ | Logging transversal |
+| Lombok | Reducción de boilerplate |
+| Apache Commons Lang3 | Utilidades de strings |
+| JUnit 5 + Mockito | Tests unitarios e integración |
+| JaCoCo | Cobertura de código |
+| Logback | Logging a consola y fichero |
+| Maven 3.9.14 | Gestión de dependencias y build |
+
+---
 
 ## Estructura del Proyecto
 
 ```
-clase2parte2/
-├── src/
-│   ├── main/
-│   │   ├── java/com/exampleinyection/clase2parte2/
-│   │   │   ├── GFTFormacion.java                    (Clase principal de Boot)
-│   │   │   ├── config/
-│   │   │   │   ├── AppConfig.java                  (Configuración de la aplicación)
-│   │   │   │   └── SpringContextHelper.java        (Helper para acceso a beans)
-│   │   │   ├── aspect/
-│   │   │   │   └── LoggingAspect.java              (Trazas de entrada/salida con AOP)
-│   │   │   ├── controller/
-│   │   │   │   └── UserController.java             (Endpoints REST)
-│   │   │   ├── service/
-│   │   │   │   └── UserService.java                (Lógica de negocio)
-│   │   │   ├── model/
-│   │   │   │   ├── User.java                       (Entidad Usuario)
-│   │   │   │   └── Allergy.java                    (Entidad Alergia)
-│   │   │   ├── dto/
-│   │   │   │   └── UserRequest.java                (DTO para requests)
-│   │   │   └── exception/
-│   │   │       ├── GlobalExceptionHandler.java     (Manejo centralizado de errores)
-│   │   │       ├── UserNotFoundException.java
-│   │   │       └── InvalidUserException.java
-│   │   └── resources/
-│   │       ├── application.yml                     (Configuración principal)
-│   │       ├── application-local.yml               (Perfil Local)
-│   │       ├── application-dev.yml                 (Perfil Dev)
-│   │       ├── application-prod.yml                (Perfil Prod)
-│   │       └── logback-spring.xml                  (Configuración de logs)
-│   └── test/
-│       └── java/com/exampleinyection/clase2parte2/
-│           ├── model/
-│           │   ├── UserTest.java
-│           │   └── AllergyTest.java
-│           ├── dto/
-│           │   └── UserRequestTest.java
-│           ├── service/
-│           │   ├── UserServiceTest.java
-│           │   └── UserServiceExtraTest.java
-│           ├── controller/
-│           │   ├── UserControllerTest.java
-│           │   └── ExceptionHandlerTest.java
-│           ├── config/
-│           │   └── AppConfigTest.java
-│           ├── exception/
-│           │   └── ExceptionTest.java
-│           └── GFTFormacionTests.java
-├── pom.xml                                         (Dependencias Maven)
-├── mvnw / mvnw.cmd                                (Maven Wrapper)
-└── README.md                                      (Este archivo)
+src/
+├── main/java/com/exampleinyection/clase2parte2/
+│   ├── GFTFormacion.java                    # Clase principal @SpringBootApplication
+│   ├── aspect/
+│   │   └── LoggingAspect.java               # AOP: traza entrada/salida/tiempo de métodos
+│   ├── config/
+│   │   ├── AppConfig.java                   # @ConfigurationProperties - perfiles YAML
+│   │   ├── DataInitializer.java             # CommandLineRunner: precarga 30 users + 5 alergias
+│   │   └── SpringContextHelper.java         # Helper para acceso a beans
+│   ├── controller/
+│   │   └── UserController.java              # Endpoints REST
+│   ├── dto/
+│   │   ├── AllergyDTO.java                  # Record: id, name, severity
+│   │   ├── UserDTO.java                     # Record: id, name, age, List<AllergyDTO>
+│   │   └── UserRequest.java                 # Record: DTO de entrada (name, age, allergies)
+│   ├── exception/
+│   │   ├── ErrorResponse.java               # Payload de error estructurado
+│   │   ├── GlobalExceptionHandler.java      # @RestControllerAdvice centralizado
+│   │   ├── InvalidUserException.java        # → HTTP 400
+│   │   └── UserNotFoundException.java       # → HTTP 404
+│   ├── model/
+│   │   ├── Allergy.java                     # @Entity con @ManyToMany(mappedBy) + @JsonIgnore
+│   │   └── User.java                        # @Entity con @ManyToMany + @JoinTable user_allergies
+│   ├── repository/
+│   │   ├── AllergyRepository.java           # JpaRepository<Allergy, Long>
+│   │   └── UserRepository.java              # + @Query JPQL, @Modifying, findByNameContaining
+│   └── service/
+│       └── UserService.java                 # Lógica de negocio, mapeo anti-ciclos, defaults
+└── test/java/com/exampleinyection/clase2parte2/
+    ├── GFTFormacionTests.java
+    ├── aspect/
+    │   └── LoggingAspectTest.java           # Mockea ProceedingJoinPoint, cubre excepción
+    ├── config/
+    │   ├── AppConfigIntegrationTest.java
+    │   ├── AppConfigTest.java
+    │   ├── AppConfigTestWithPropertySource.java
+    │   └── AppConfigTestWithPropertySourceFile.java
+    ├── controller/
+    │   ├── ExceptionHandlerTest.java
+    │   └── UserControllerTest.java
+    ├── dto/
+    │   └── UserRequestTest.java
+    ├── exception/
+    │   ├── ErrorResponseTest.java           # Cubre equals/hashCode/canEqual con subclases
+    │   └── ExceptionTest.java
+    ├── integration/
+    │   └── FullIntegrationTest.java         # @SpringBootTest + MockMvc: flujo POST → GET
+    ├── model/
+    │   ├── AllergyTest.java                 # Cubre ManyToMany, canEqual, equals con ids
+    │   └── UserTest.java                    # Cubre subclases Lombok canEqual
+    └── service/
+        ├── UserServiceExtraTest.java        # Casos borde: blank name, age negativo, paginación
+        └── UserServiceTest.java             # Cubre ambas ramas: con repo y sin repo
 ```
 
-## Tecnologías
-
-- Java 21
-- Spring Boot 4.0.4
-- Maven 3.9.14
-- JUnit 5 (Jupiter)
-- Mockito
-- Lombok
-- Spring AOP / AspectJ Weaver
-- Jakarta Bean Validation
-- Jackson (JSON processing)
-- Apache Commons Lang3
-- Logback
+---
 
 ## Requisitos Previos
 
-- Java 21 instalado
-- Maven 3.6+ (incluido Maven Wrapper)
+- Java 21
+- Maven 3.6+ (o usar el Maven Wrapper incluido)
+
+---
 
 ## Instalación y Ejecución
 
-### Compilar el proyecto
+### Compilar
 
 ```bash
 ./mvnw clean compile
-```
-
-En Windows:
-```cmd
+# Windows:
 mvnw.cmd clean compile
 ```
 
-### Ejecutar la aplicación
-
-Por defecto, ejecuta con perfil LOCAL:
+### Ejecutar (perfil LOCAL por defecto)
 
 ```bash
 ./mvnw spring-boot:run
 ```
 
-Con perfil DEV:
+### Ejecutar con perfil específico
 
 ```bash
+# DEV
 ./mvnw spring-boot:run -Dspring-boot.run.arguments="--spring.profiles.active=dev"
-```
 
-Con perfil PROD:
-
-```bash
+# PROD
 ./mvnw spring-boot:run -Dspring-boot.run.arguments="--spring.profiles.active=prod"
 ```
 
-Con variable de entorno personalizada:
+### Con variable de entorno personalizada (PowerShell)
 
-En PowerShell:
 ```powershell
 $env:DB_PASSWORD="tu_contraseña_segura"
 ./mvnw spring-boot:run
 ```
 
-En CMD:
-```cmd
-set DB_PASSWORD=tu_contraseña_segura
-mvnw.cmd spring-boot:run
-```
+Al arrancar, `DataInitializer` precarga automáticamente **5 alergias** y **30 usuarios** con relaciones ManyToMany en H2.
 
-## Cómo probar la app rápido
-
-### 1) Arrancar la aplicación
-
-En PowerShell:
-
-```powershell
-Set-Location "C:\Users\pulz\Desktop\practica-api-s"
-.\mvnw.cmd spring-boot:run
-```
-
-### 2) Probar endpoints
-
-Crear un usuario:
-
-```powershell
-Invoke-RestMethod -Method Post -Uri "http://localhost:8080/api" -ContentType "application/json" -Body '{"name":"Juan","age":25,"allergies":[]}'
-```
-
-Listar usuarios:
-
-```powershell
-Invoke-RestMethod -Method Get -Uri "http://localhost:8080/api?page=1&size=10"
-```
-
-Buscar por nombre:
-
-```powershell
-Invoke-RestMethod -Method Get -Uri "http://localhost:8080/api/user/search?nombre=Juan"
-```
-
-También puedes usar Postman con las mismas rutas.
-
-### 3) Validar logs
-
-- En consola verás trazas de entrada/salida de métodos gracias a `LoggingAspect`.
-- También se escriben en el fichero `myApp.log` en la raíz del proyecto.
-
-## Tests
-
-Ejecutar todos los tests:
-
-```bash
-./mvnw test
-```
-
-Ver cobertura de código:
-
-```bash
-./mvnw test jacoco:report
-```
-
-El reporte se genera en `target/site/jacoco/index.html`
-
-### Quality gate de cobertura
-
-El proyecto valida cobertura mínima del 100% (líneas y ramas) en fase `verify` mediante JaCoCo.
-
-Comando recomendado local:
-
-```bash
-./mvnw clean verify
-```
-
-En Windows:
-
-```cmd
-mvnw.cmd clean verify
-```
-
-En CI se ejecuta automáticamente en `.github/workflows/ci.yml`.
-
-### Análisis estático con SonarCloud
-
-El proyecto incluye un workflow dedicado en `.github/workflows/sonarcloud.yml`.
-
-Para activarlo en GitHub, configura estos valores en el repositorio:
-
-- Secret: `SONAR_TOKEN`
-- Variable: `SONAR_ORGANIZATION`
-- Variable: `SONAR_PROJECT_KEY`
-
-Si las variables no se definen, el workflow intenta usar:
-
-- `SONAR_ORGANIZATION`: `github.repository_owner`
-- `SONAR_PROJECT_KEY`: `owner_repo`
-
-Recomendación: definir ambas variables explícitamente en GitHub para evitar diferencias entre entornos.
-
-El workflow ejecuta:
-
-- `clean verify` (tests + JaCoCo + quality gate)
-- análisis SonarCloud con cobertura desde `target/site/jacoco/jacoco.xml`
+---
 
 ## Endpoints de la API
 
-### Obtener Usuarios (con paginación)
+> Base URL: `http://localhost:8080/api`
 
-```http
-GET /api?page=1&size=10
+| Método | Endpoint | Descripción |
+|--------|----------|-------------|
+| `GET` | `/api` | Listar usuarios (paginado: `?page=1&size=10`) |
+| `GET` | `/api/{id}` | Obtener usuario por ID |
+| `GET` | `/api/search?name=X` | Buscar por nombre (case-insensitive) |
+| `GET` | `/api/users/allergies` | Usuarios con sus alergias (via JPQL JOIN FETCH → `UserDTO`) |
+| `GET` | `/api/config` | Ver configuración del perfil activo |
+| `POST` | `/api` | Crear usuario |
+| `POST` | `/api/batch` | Crear múltiples usuarios |
+| `PUT` | `/api/{id}` | Actualizar usuario (parcial: ignora campos nulos/vacíos) |
+| `PATCH` | `/api/{id}/name?name=X` | Actualizar solo el nombre (`@Modifying` + `@Query`) |
+| `DELETE` | `/api/{id}` | Eliminar usuario |
+| `DELETE` | `/api/all` | Eliminar todos los usuarios |
+
+### Ejemplos rápidos (PowerShell)
+
+```powershell
+# Crear usuario con alergia
+Invoke-RestMethod -Method Post -Uri "http://localhost:8080/api" `
+  -ContentType "application/json" `
+  -Body '{"name":"Juan","age":25,"allergies":[{"name":"Pollen","severity":2}]}'
+
+# Listar con paginación
+Invoke-RestMethod -Method Get -Uri "http://localhost:8080/api?page=1&size=5"
+
+# Buscar por nombre
+Invoke-RestMethod -Method Get -Uri "http://localhost:8080/api/search?name=Juan"
+
+# Usuarios con alergias (DTO sin ciclos)
+Invoke-RestMethod -Method Get -Uri "http://localhost:8080/api/users/allergies"
+
+# Actualizar solo el nombre
+Invoke-RestMethod -Method Patch -Uri "http://localhost:8080/api/1/name?name=Carlos"
 ```
 
-Parámetros:
-- `page`: número de página (default: 1)
-- `size`: tamaño de página (default: 10)
+---
 
-### Obtener Usuario por ID
+## Modelo de Datos
 
-```http
-GET /api/{id}
+### Relación ManyToMany: `User` ↔ `Allergy`
+
+```
+users                user_allergies         allergy
+─────────────────    ─────────────────    ─────────────────
+id (PK)              user_id (FK)         id (PK)
+name                 allergy_id (FK)      name
+age                                       severity
 ```
 
-### Crear Usuario
+- `User` es el **dueño** de la relación (`@JoinTable`)
+- `Allergy` usa `mappedBy` + `@JsonIgnore` para evitar referencias circulares
+- Los DTOs (`UserDTO` / `AllergyDTO`) rompen los ciclos en la respuesta JSON
 
-```http
-POST /api
-Content-Type: application/json
-
-{
-  "name": "Juan",
-  "age": 25,
-  "allergies": [
-    {
-      "name": "Peanuts",
-      "severity": 5
-    }
-  ]
-}
-```
-
-### Actualizar Usuario
-
-```http
-PUT /api/{id}
-Content-Type: application/json
-
-{
-  "name": "Juan Actualizado",
-  "age": 26,
-  "allergies": null
-}
-```
-
-### Eliminar Usuario
-
-```http
-DELETE /api/{id}
-```
-
-### Eliminar Todos los Usuarios
-
-```http
-DELETE /api/all
-```
-
-### Buscar Usuarios por Nombre
-
-```http
-GET /api/user/search?nombre=Juan
-```
-
-### Crear Múltiples Usuarios
-
-```http
-POST /api/batch
-Content-Type: application/json
-
-[
-  {
-    "name": "Usuario 1",
-    "age": 25,
-    "allergies": null
-  },
-  {
-    "name": "Usuario 2",
-    "age": 30,
-    "allergies": null
-  }
-]
-```
-
-### Obtener Configuración de la Aplicación
-
-```http
-GET /api/config
-```
-
-## Configuración de Perfiles
-
-### Perfil LOCAL (Por defecto)
-
-```yaml
-app:
-  name: "Mi App GFT - LOCAL"
-  password: ${DB_PASSWORD:default_local_password}
-  update:
-    disabled: false
-    message: "No se puede actualizar ahora mismo"
-  pagination:
-    max-size: 50
-  defaults:
-    name: "Usuario Anónimo"
-    age: 18
-```
-
-### Perfil DEV
-
-```yaml
-app:
-  name: "GFT - Entorno DESARROLLO"
-  password: ${DB_PASSWORD:dev_password_123}
-  update:
-    disabled: true
-    message: "Update bloqueado en DEV por mantenimiento"
-  pagination:
-    max-size: 20
-  defaults:
-    name: "User_Dev"
-    age: 25
-```
-
-### Perfil PROD
-
-```yaml
-app:
-  name: "Mi App GFT REAL"
-  password: ${DB_PASSWORD:prod_password_securely_set}
-  update:
-    disabled: true
-    message: "Peligro: No se puede actualizar en PRODUCCION"
-  pagination:
-    max-size: 100
-  defaults:
-    name: "Usuario_Anonimo"
-    age: 18
-```
-
-## Entidades Principales
-
-### User
-
-Representa un usuario del sistema con validaciones:
+### Entidades
 
 ```java
+// User — entidad principal
+@Entity @Data @Table(name = "users")
 public class User {
-    private Long id;
-    private String name;        // Obligatorio
-    private int age;            // Entre 0 y 120
-    private List<Allergy> allergies;
+    @Id @GeneratedValue Long id;
+    @NotBlank String name;
+    @Min(0) @Max(120) int age;
+    @ManyToMany(cascade = {PERSIST, MERGE})
+    @JoinTable(name = "user_allergies", ...)
+    List<Allergy> allergies;
 }
-```
 
-### Allergy
-
-Representa una alergia asociada a un usuario:
-
-```java
+// Allergy — entidad compartida
+@Entity @Data
 public class Allergy {
-    private String name;
-    private int severity;       // Nivel de severidad (0-10)
+    @Id @GeneratedValue Long id;
+    String name;
+    int severity;
+    @ManyToMany(mappedBy = "allergies") @JsonIgnore
+    List<User> users;
 }
 ```
 
-### UserRequest
-
-DTO para las requests de creación/actualización:
+### Queries personalizadas en `UserRepository`
 
 ```java
-public record UserRequest(
-    String name,
-    Integer age,
-    List<Allergy> allergies
-) {}
+// JPQL con JOIN FETCH para evitar N+1
+@Query("SELECT DISTINCT u FROM User u LEFT JOIN FETCH u.allergies")
+List<User> findAllWithAllergies();
+
+// UPDATE directo sin cargar la entidad
+@Modifying @Transactional
+@Query("UPDATE User u SET u.name = :name WHERE u.id = :id")
+int updateNameById(@Param("id") Long id, @Param("name") String name);
 ```
 
-## Configuración de la Aplicación
+---
 
-La clase `AppConfig` gestiona todas las propiedades de configuración y está validada con:
+## Perfiles de Configuración
 
-- `@Component`: Registra la clase como bean de Spring
-- `@ConfigurationProperties(prefix = "app")`: Vincula propiedades YAML
-- `@Validated`: Valida las propiedades configuradas
+| Propiedad | LOCAL | DEV | PROD |
+|---|---|---|---|
+| `app.name` | Mi App GFT - LOCAL | GFT - Entorno DESARROLLO | Mi App GFT REAL |
+| `update.disabled` | `false` | `true` | `true` |
+| `pagination.max-size` | 50 | 20 | 100 |
+| `defaults.age` | 18 | 25 | 18 |
 
-### AppConfig
-
-```java
-public class AppConfig {
-    private String name;                    // Nombre de la aplicación
-    private String password;                // Contraseña desde DB_PASSWORD env var
-    private UpdateSettings update;          // Configuración de actualizaciones
-    private PaginationSettings pagination;  // Configuración de paginación
-    private DefaultSettings defaults;       // Valores por defecto
-}
-```
-
-## Manejo de Excepciones
-
-El proyecto incluye un manejador centralizado de excepciones:
-
-```java
-@RestControllerAdvice
-public class GlobalExceptionHandler {
-    // Maneja UserNotFoundException: 404
-    // Maneja InvalidUserException: 400
-    // Maneja ResponseStatusException: HTTP status configurado
-    // Maneja excepciones genéricas: 500
-}
-```
-
-## Principios de Clean Code Aplicados
-
-### 1. Nombres Descriptivos
-
-- Variables con nombres claros: `userNameWithDefault`, `userAgeWithDefault`
-- Métodos descriptivos: `saveUser()`, `updateUser()`, `searchByName()`
-
-### 2. Funciones Pequeñas y Responsabilidad Única
-
-- Cada servicio tiene una responsabilidad clara
-- Los métodos hacen una cosa y la hacen bien
-
-### 3. Sin Comentarios Innecesarios
-
-- El código es lo suficientemente claro para ser autoexplicativo
-- Solo comentarios cuando el "por qué" no es evidente
-
-### 4. DRY (Don't Repeat Yourself)
-
-- Lógica común centralizada en servicios
-- Validaciones en anotaciones
-
-### 5. Inyección de Dependencias
-
-- Constructor injection para dependencias
-- Sin acoplamiento fuerte entre componentes
-
-## Validación
-
-La aplicación utiliza Jakarta Bean Validation para validar datos:
-
-```java
-@NotBlank         // Campo obligatorio y no vacío
-@NotNull          // Campo obligatorio
-@Min(value)       // Valor mínimo
-@Max(value)       // Valor máximo
-@Valid            // Validación recursiva
-```
-
-## Seguridad
-
-### Propiedades Sensibles
-
-Las contraseñas y datos sensibles se manejan mediante variables de entorno:
-
+Contraseñas via variable de entorno:
 ```yaml
-password: ${DB_PASSWORD:default_value}
+password: ${DB_PASSWORD:valor_por_defecto}
 ```
 
-Nunca hardcodear contraseñas en los archivos de configuración.
+---
 
-### Para Producción
-
-- Usar un gestor de secretos (AWS Secrets Manager, HashiCorp Vault)
-- Configurar variables de entorno de forma segura en la infraestructura
-- En Docker: usar `docker run -e DB_PASSWORD=xxx`
-- En Kubernetes: usar Secrets
-
-## Testing
-
-El proyecto incluye:
-
-- Tests unitarios para modelos, DTOs, servicios, excepciones y configuración.
-- Tests de controlador con MockMvc.
-- Tests de integración.
-- Tests específicos para el aspecto de logging (`LoggingAspectTest`).
-
-Ejecutar con cobertura:
+## Tests
 
 ```bash
+# Ejecutar todos los tests
+./mvnw test
+
+# Tests + reporte JaCoCo
 ./mvnw clean test jacoco:report
+# → Abre: target/site/jacoco/index.html
+
+# Verificación completa (tests + quality gate 100%)
+./mvnw clean verify
 ```
 
-## Construcción
+### Cobertura 100% — estrategia
 
-Generar JAR ejecutable:
+| Clase/Capa | Estrategia |
+|---|---|
+| `UserService` | Prueba ambas ramas: con `UserRepository` mockeado y sin él (lista en memoria) |
+| `UserServiceExtraTest` | Casos borde: nombre en blanco, edad negativa, paginación con `size=0` y `size > maxSize` |
+| `UserTest` / `AllergyTest` | Cubre `equals`, `hashCode`, `canEqual` con subclases `Lombok` estrictas |
+| `ErrorResponseTest` | Ídem para `ErrorResponse` + ramas null |
+| `LoggingAspectTest` | Mockea `ProceedingJoinPoint`, cubre rama de excepción y método de pointcut |
+| `FullIntegrationTest` | `@SpringBootTest` + `MockMvc`: flujo completo POST → GET con datos reales |
+| `AppConfig*` | Múltiples variantes con `@PropertySource` y perfiles |
+
+---
+
+## CI/CD
+
+| Workflow | Archivo | Trigger |
+|---|---|---|
+| Build + Tests + JaCoCo quality gate | `.github/workflows/ci.yml` | Push / PR |
+| SonarCloud análisis estático | `.github/workflows/sonarcloud.yml` | Push |
+
+**Secrets necesarios para SonarCloud:**
+- `SONAR_TOKEN`, `SONAR_ORGANIZATION`, `SONAR_PROJECT_KEY`
+
+---
+
+## Principios Aplicados
+
+- **Clean Code** — nombres descriptivos, funciones pequeñas, sin magia hardcodeada
+- **SOLID** — responsabilidad única por capa, inversión de dependencias via constructor injection
+- **DRY** — lógica centralizada en `UserService`, validaciones en anotaciones Jakarta
+- **AOP** — `LoggingAspect` intercepta todos los métodos del paquete principal
+- **Layered Architecture** — Controller → Service → Repository
+- **DTO pattern** — `UserRequest` de entrada, `UserDTO`/`AllergyDTO` de salida
+- **Anti-N+1** — `JOIN FETCH` en query personalizada para alergias
+
+---
+
+## Generar JAR
 
 ```bash
 ./mvnw clean package
-```
-
-Ejecutar JAR:
-
-```bash
 java -jar target/GFTFormacion-0.0.1-SNAPSHOT.jar
 ```
 
-## Logs
-
-La aplicación registra información importante durante la ejecución mediante Logback y AOP:
-
-- `LoggingAspect` intercepta métodos del paquete `com.exampleinyection.clase2parte2..*`.
-- Se registran entradas, salidas, tiempos de ejecución y errores.
-- Configuración en `src/main/resources/logback-spring.xml`.
-- Salida activa en consola y en fichero (`myApp.log`).
-
-```
-The following 1 profile is active: "local"
-App name: GFTSpringBoot
-Tomcat started on port 8080 (http)
-```
-
-## Documentación Adicional
-
-Ver `CONFIGURACION.md` para más detalles sobre:
-- Configuración de perfiles
-- Variables de entorno
-- Gestión de propiedades sensibles
+---
 
 ## Autor
 
-Proyecto de formación GFT - Curso de Spring Boot y Clean Code
+**Pau López Núñez** — GFT Junior Training Programme (back-end track)  
+[github.com/PauLopNun](https://github.com/PauLopNun)
+
+---
 
 ## Licencia
 
-Este proyecto es de uso educativo.
-
+Proyecto de uso educativo — GFT Technologies SE.
