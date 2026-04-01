@@ -40,9 +40,9 @@ public class FullIntegrationTest {
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.name").value("Paco"));
 
-        mockMvc.perform(get("/api?page=1&size=10"))
+        mockMvc.perform(get("/api/search?name=Paco"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.length()").value(org.hamcrest.Matchers.greaterThanOrEqualTo(1)))
-                .andExpect(jsonPath("$[0].name").value("Paco"));
+                .andExpect(jsonPath("$[-1].name").value("Paco"));
     }
 }

@@ -100,7 +100,7 @@ class UserControllerTest {
     void searchUsers() throws Exception {
         when(userService.searchByName("pa")).thenReturn(List.of(new User(1L, "Paco", 22, null)));
 
-        mockMvc.perform(get("/api/user/search?nombre=pa"))
+        mockMvc.perform(get("/api/search?name=pa"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$[0].name").value("Paco"));
     }
